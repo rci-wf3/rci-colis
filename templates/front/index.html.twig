@@ -3,38 +3,26 @@
 {% block title %}Hello FrontController!{% endblock %}
 
 {% block body %}
-    <div class="view full-page-intro" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg'); background-repeat: no-repeat; background-size: cover;">
-        <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-            <div class="container">
-                <div class="row wow fadeIn">
-                    <div class="col-md-6 mb-4 mx-auto white-text text-center">
-                        <h1 class="display-4 font-weight-bold">R.C.I. Colis</h1>
-                        <hr class="hr-light">
-                        <p class="mb-4">
-                            <strong>Relais Colis Indépendant Franco-Suisse</strong>
-                        </p>
-                        <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white waves-effect waves-light">
-                            Particulier
-                            <i class="fas fa-user ml-2"></i>
-                        </a>
-                        <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white waves-effect waves-light">
-                            Professionnel
-                            <i class="fas fa-user-tie ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+     <!-- Full Page Intro -->
+  <div class="view" style="background-image: url('images/livraison.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+    <!-- Mask & flexbox options-->
+    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+      <!-- Content -->
+      <div class="text-center white-text mx-5 wow fadeIn">
+        <h1 class="mb-4">
+          <strong>R.C.I Colis </br>
+            Relais Colis Indépendant Franco-Suisse</strong>
+        </h1>
+        <button type="button" class="btn btn-outline-special-color waves-effect">Particulier</button>
+        <button type="button" class="btn btn-outline-special-color waves-effect">Professionel</button>
+
+       
+      </div>
+  </div>
+  </div>
     <main class="container mt-5 pt-5">
-        <div class="example-wrapper">
-            <h1>Hello {{ controller_name }}! ✅</h1>
-    
-            This friendly message is coming from:
-            <ul>
-                <li>Your controller at <code><a href="{{ 'C:/laragon/www/rci-colis/src/Controller/FrontController.php'|file_link(0) }}">src/Controller/FrontController.php</a></code></li>
-                <li>Your template at <code><a href="{{ 'C:/laragon/www/rci-colis/templates/front/index.html.twig'|file_link(0) }}">templates/front/index.html.twig</a></code></li>
-            </ul>
-        </div>
+            
     </main>
 {% endblock %}
