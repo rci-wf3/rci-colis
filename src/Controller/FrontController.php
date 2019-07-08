@@ -22,7 +22,7 @@ class FrontController extends AbstractController
      */
     public function historique()
     {
-        return $this->render('contact/historique.html.twig', [
+        return $this->render('front/propos/historique.html.twig', [
             'controller_name' => 'FrontController',
         ]);
     }
