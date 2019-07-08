@@ -16,4 +16,14 @@ class FrontController extends AbstractController
             'controller_name' => 'FrontController',
         ]);
     }
+
+    /**
+     * @Route("/historique", name="front_historique")
+     */
+    public function historique()
+    {
+        return $this->render('contact/historique.html.twig', [
+            'controller_name' => 'FrontController',
+        ]);
+    }
 }
