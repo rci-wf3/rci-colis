@@ -26,4 +26,14 @@ class FrontController extends AbstractController
             'controller_name' => 'FrontController',
         ]);
     }
+
+    /**
+     * @Route("/cguv", name="front_cguv")
+     */
+    public function cguv()
+    {
+        return $this->render('front/propos/cguv.html.twig', [
+            'controller_name' => 'FrontController',
+        ]);
+    }
 }
