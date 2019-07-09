@@ -38,7 +38,7 @@ class FrontController extends AbstractController
     }
 
     /**
-     * @Route("/mentions", name="front_mentions")
+     * @Route("/mentions-legales", name="front_mentions")
      */
     public function mentions()
     {
