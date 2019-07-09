@@ -69,23 +69,7 @@
                     </div>
                 </nav>
         </header>
-        <!-- Full Page Intro -->
-        <div class="view" style="background-image: url('images/livraison.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-          <!-- Mask & flexbox options-->
-          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-            <!-- Content -->
-            <div class="text-center white-text mx-5 wow fadeIn">
-              <h1 class="mb-4">
-                <strong>R.C.I Colis </br>
-                Relais Colis Indépendant Franco-Suisse</strong>
-              </h1>
-              <button type="button" class="btn btn-outline-special-color waves-effect">Particulier</button>
-              <button type="button" class="btn btn-outline-special-color waves-effect">Professionel</button>
-            </div>
-          </div>
-        </div>
+        
 
         
 
@@ -94,26 +78,47 @@
         {% block javascripts %}
             {% include "includes/javascripts.html.twig" %}
         {% endblock %}
-        <!-- Footer -->
-        <footer class="page-footer text-center font-small mt-4 wow rgba-black-strong">
-            
-                <hr class="my-4">
-            
-                <!-- Social icons -->
-                <div class="pb-4">
-                  <a href="https://www.facebook.com/mdbootstrap" target="_blank">
-                    <i class="fab fa-facebook-f mr-3"></i>
-                  </a>
-                </div>
-            
-                <!--Copyright-->
-                <div class="footer-copyright py-3">
-                  © 2019 Copyright:
-                  <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> MDBootstrap.com </a>
-                </div>
-                <!--/.Copyright-->
-            
-              </footer>
-      <!-- Footer -->
+       <!-- Footer -->
+<footer class="page-footer text-center font-small mt-4 wow bg-dark">
+
+  <hr class="my-4">
+
+  <!-- Social icons -->
+  <div class="row w-100 d-flex- justify-content-center">
+    <div class="col-md-2 d-flex flex-column">
+      <h5 class="text-left">À propos de relais colis</h5>
+      <ul class="p-0">
+        <li class="text-left list-unstyled"><a href="">Qui Sommes nous?</a></li>
+        <li class="text-left list-unstyled"><a href="">Nos Abonnment</a></li>
+      </ul>
+    </div>
+    <div class="col-md-2 d-flex flex-column">
+      <h5 class="text-left">Informations légales</h5>
+      <ul class="p-0">
+        <li class="text-left list-unstyled"><a href="">CGUV</a></li>
+        <li class="text-left list-unstyled"><a href="">Mentions Légales</a></li>
+        <li class="text-left list-unstyled"><a href="">Politique de confidentialité</a></li>
+        <li class="text-left list-unstyled"><a href="">Utilisation des cookies</a></li>
+        <li class="text-left list-unstyled"><a href="">Crédits</a></li>
+      </ul>
+    </div>
+    <div class="col-md-2 d-flex flex-column">
+      <h5 class="text-left">Besoin d'aide ?</h5>
+      <ul class="p-0">
+        <li class="text-left list-unstyled"><a href="">Nous contacter</a></li>
+        <li class="text-left list-unstyled"><a href="">Consultez notre FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!--Copyright-->
+  <div class="footer-copyright py-3">
+    © 2019 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> MDBootstrap.com </a>
+  </div>
+  <!--/.Copyright-->
+
+</footer>
+<!-- Footer -->
     </body>
 </html>
