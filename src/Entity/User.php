@@ -18,6 +18,11 @@
          */
         protected $id;
 
+        /**
+         * @ORM\Column(type="string", length=32)
+         * @Assert\NotBlank
+         */
+
         public function __construct()
         {
             parent::__construct();
