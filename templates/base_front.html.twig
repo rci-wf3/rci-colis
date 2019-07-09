@@ -6,9 +6,13 @@
         {% block stylesheets %}
             {% include "includes/stylesheets.html.twig" %}
         {% endblock %}
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
+      <div class="loader-container">
+        <div class="loader"><img src="images/giphy.gif" alt="loader colis"></div>
+      </div>
         
         <header>
                 <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
@@ -120,5 +124,7 @@
 
 </footer>
 <!-- Footer -->
+
+<script src="js/loader.js"></</script>
     </body>
 </html>
