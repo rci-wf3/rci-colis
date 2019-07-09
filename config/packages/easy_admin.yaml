@@ -7,17 +7,31 @@ easy_admin:
         class: App\Entity\User
         label: "Utilisateur"
         list:
-          fields: [
-            { property: 'username', label: "Nom d'utilisateur" }, 
-            { property: 'email', label: 'Adresse email' }, 
-            { property: 'lastLogin', label: 'Dernière connexion' }, 
+          fields:
+            [{ property: 'username', label: "Nom d'utilisateur" }, 
+            { property: 'email', label: 'Adresse email' },
+            { property: 'nom', label: 'Nom' },
+            { property: 'prenom', label: 'Prénom' },
+            { property: 'adresse', label: 'Adresse' },
+            { property: 'ville', label: 'Ville' },
+            { property: 'codePostal', label: 'Code postal' },
+            { property: 'telephone', label: 'Numéro de téléphone' },
             { property: 'enabled', label: 'Compte activé ?' }]
         edit:
-          fields: [
-            { property: 'username', label: "Nom d'utilisateur" }, 
-            { property: 'email', label: 'Adresse email' }, 
-            { property: 'lastLogin', label: 'Dernière connexion' }, 
-            { property: 'enabled', label: 'Compte activé ?' }]
+          fields: &fieldsUser
+            [{ property: 'username', label: "Nom d'utilisateur" }, 
+              { property: 'email', label: 'Adresse email' }, 
+              { property: 'password', label: 'Mot de passe' },
+              { property: 'roles', label: 'Role(s)' },
+              { property: 'nom', label: 'Nom' },
+              { property: 'prenom', label: 'Prénom' },
+              { property: 'adresse', label: 'Adresse' },
+              { property: 'ville', label: 'Ville' },
+              { property: 'codePostal', label: 'Code postal' },
+              { property: 'telephone', label: 'Numéro de téléphone' },
+              { property: 'enabled', label: 'Compte activé ?' }]
+        form:
+          fields: *fieldsUser
       #  List the entity class name you want to manage
       #  - App\Entity\Product
       #  - App\Entity\Category
