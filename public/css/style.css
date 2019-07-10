@@ -442,3 +442,66 @@ ol,ul{
 }
 
 /* FIN DU CSS HISTORIQUE*/
+
+
+/* CSS DU LOADER */
+.loader-container{
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background-color: #050A19;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.loader{
+	height: 50vh;
+    top: 50%;
+    left: 50%;
+    bottom: 50%;
+}
+
+img{
+	height: 50vh;
+}
+
+#histo{
+	padding-top: 20vh;
+}
+/* fin du css du loader */
+
+/* css test du logo */
+.logo{
+    height: 5vh;
+}
+/* fin test logo css */
+
+/* header et nav bar */
+/* Required height of parents of the Full Page Intro and Intro itself */
+html,
+body,
+.view {
+  height: 100%; }
+
+/* Navbar animation */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.2); 
+}
+
+.top-nav-collapse {
+  background-color: #1C2331;
+ }
+
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #1C2331; } }
+
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+  background-color: #1C2331; }
+  /* fin header et nav bar */
