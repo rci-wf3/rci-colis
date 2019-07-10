@@ -6,8 +6,13 @@
         {% block stylesheets %}
             {% include "includes/stylesheets.html.twig" %}
         {% endblock %}
+        <link rel="stylesheet" href="{{ absolute_url(asset('css/style.css')) }}">
     </head>
-    <body>
+    <body id="histo">
+            
+            {% block navbar %}
+                {% include "navbar/nav_black.html.twig" %}
+            {% endblock navbar %}
         <div>
             {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                 {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
