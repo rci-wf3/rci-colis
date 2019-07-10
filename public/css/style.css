@@ -4,6 +4,11 @@
   margin-top: 10%;
 }*/
 
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 #historique h2{
   font-size: 4em;
   text-align: center;
