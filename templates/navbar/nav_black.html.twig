@@ -1,52 +1,47 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top scrolling-navbar bg-dark">
-        <div class="container">
-              <!-- Brand -->
-              <a class="navbar-brand" href="{{path('front_index')}}">
-                <img class="logo mr-5" src="{{ absolute_url(asset('images/logo.png')) }}" >
-              </a>
-              <!-- Collapse -->
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="{{path('front_index')}}">
+            <img class="logo mr-5" src="{{ absolute_url(asset('images/logo.png')) }}">
+        </a>
+        <!-- Collapse -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <!-- Links -->
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- Left -->
-                <ul class="navbar-nav mr-auto">
-                  
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">QUI SOMMES NOUS ?</a>
-                      <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="{{path('front_historique')}}">Historique</a>
-                      </div>
-                  </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                      aria-haspopup="true" aria-expanded="false">NOS SERVICES</a>
-                      <div class="row dropdown-menu dropdown-primary dropright" aria-labelledby="navbarDropdownnMenuLink">
-                          <a class="dropdown-item dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                          aria-haspopup="true" aria-expanded="false">Particuliers</a>
-                          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item" href="#">Inscription</a>
-                          <a class="dropdown-item" href="#">Les points relais RCI</a>
-                          <a class="dropdown-item" href="#">Passer une commande</a>
-                          </div>
-                          <a class="dropdown-item" href="">Professionnels</a>
-                          <a class="dropdown-item" href="">Devenir relais colis indépendant</a>
-                      </div>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                      aria-haspopup="true" aria-expanded="false">NOS ABONNEMENTS</a>
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Left -->
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">QUI SOMMES NOUS ?</a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="#">Nos tarifs</a>
-                      <a class="dropdown-item" href="#">Formule à l’unité</a>
-                      <a class="dropdown-item" href="#">Formule sur devis</a>
+                        <a class="dropdown-item" href="{{path('front_historique')}}">Historique</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">NOS SERVICES</a>
+                    <div class="row dropdown-menu dropdown-primary dropright" aria-labelledby="navbarDropdownnMenuLink">
+                        <a class="dropdown-item dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Particuliers</a>
+                        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Inscription</a>
+                            <a class="dropdown-item" href="#">Les points relais RCI</a>
+                            <a class="dropdown-item" href="#">Passer une commande</a>
+                        </div>
+                        <a class="dropdown-item" href="">Professionnels</a>
+                        <a class="dropdown-item" href="">Devenir relais colis indépendant</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">NOS ABONNEMENTS</a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Nos tarifs</a>
+                        <a class="dropdown-item" href="#">Formule à l’unité</a>
+                        <a class="dropdown-item" href="#">Formule sur devis</a>
                     </div>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT</a>
+                    <a class="nav-link" href="{{path('front_contact')}}">CONTACT</a>
                   </li>
                 </ul>
                 <ul class="navbar-nav">
@@ -65,4 +60,5 @@
                 </ul>
               </div>
         </div>
-    </nav>
+    </div>
+</nav>
