@@ -52,14 +52,14 @@
             <ul class="navbar-nav">
                 {% if is_granted('IS_AUTHENTICATED_FULLY') %}
                     <li>
-                        <a href="{{ path('fos_user_security_logout') }}" class="nav-link active">Se connecter<i class="ml-1 fas fa-user"></i></a>
+                        <a href="{{ path('fos_user_security_logout') }}" class="nav-link btn btn-outline-white rounded-pill active px-4">Déconnexion</a>
                     </li>
                 {% else %}
                     <li class="nav-item">
-                        <a href="{{ path('fos_user_registration_register') }}" class="nav-link active">S'inscrire<i class="ml-1 fas fa-edit"></i></a>
+                        <a href="{{ path('fos_user_registration_register') }}" class="nav-link btn btn-outline-white rounded-pill active px-4">Inscription</a>
                     </li>
                     <li>
-                        <a href="{{ path('fos_user_security_login') }}" class="nav-link active">Se connecter<i class="ml-1 fas fa-user"></i></a>
+                        <a href="{{ path('fos_user_security_login') }}" class="nav-link btn btn-outline-white rounded-pill active px-4">Connexion</a>
                     </li>
                 {% endif %}
             </ul>
