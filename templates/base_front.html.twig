@@ -6,12 +6,12 @@
         {% block stylesheets %}
             {% include "includes/stylesheets.html.twig" %}
         {% endblock %}
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="{{ absolute_url(asset('css/style.css')) }}">
     </head>
 
     <body>
       <div class="loader-container">
-        <div class="loader"><img src="images/giphy.gif" alt="loader colis"></div>
+        <div class="loader"><img src="{{ absolute_url(asset('images/giphy.gif')) }}" alt="loader colis"></div>
       </div>
         
         <header>
