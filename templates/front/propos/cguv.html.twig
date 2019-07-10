@@ -1,6 +1,10 @@
-{% extends 'nav_bar.html.twig' %}
+{% extends 'base_front.html.twig' %}
 
 {% block title %}CGUV R.C.I Colis{% endblock %}
+
+{% block navbar %}
+    {% include "navbar/nav_black.html.twig" %}
+{% endblock navbar %}
 
 {% block body %}
     <main id="histo" class="container mb-5 pb-5">
