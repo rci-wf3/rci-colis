@@ -1,8 +1,21 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
-{{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
-    {{ form_widget(form) }}
-    <div>
-        <input class="btn-outline-dark rounded-pill active px-4 waves-effect waves-light " type="submit" value="{{ 'registration.submit'|trans }}" />
+
+    <div id="login" class="d-flex justify-content-center align-items-center">
+            <div class="card_bis w-25">
+                {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register text-center'}}) }}
+                    <h5 class="card-header blue-gradient white-text text-center py-4"><strong>Inscription</strong></h5>
+                    <div class="card-body px-lg-5 pt-0">
+                        {{ form_widget(form, {'class': 'form-control'}) }}
+                        <div>
+                            <input class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit" value="{{ 'registration.submit'|trans }}" />
+                        </div>
+                    </div>
+                {{ form_end(form) }}
+        </div> 
     </div>
-{{ form_end(form) }}
+
+
+
+
+
