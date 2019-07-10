@@ -23,12 +23,15 @@
                 <input type="password" id="password" name="_password" required="required" autocomplete="current-password" />
             </div>
         
-            <div>
-                <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
-                <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
+            <div class="d-flex justify-content-around">
+                <div>
+                    <div class="form-check">
+                            <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+                            <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
+                    </div>
+                </div>
             </div>
-        
-            <input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
+            <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0"  id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" type="submit">Se connecter</button>
         </form>
     </div>
 </div>
