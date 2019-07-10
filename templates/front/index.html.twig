@@ -1,4 +1,12 @@
-{% extends 'base_front.html.twig' %} {% block title %}R.C.I Colis{% endblock %} {% block navbar %} {% include "navbar/nav_transparent.html.twig" %} {% endblock navbar %} {% block body %}
+{% extends 'base_front.html.twig' %}
+
+{% block title %}R.C.I Colis{% endblock %} 
+
+{% block navbar %} 
+    {% include "navbar/nav_transparent.html.twig" %} 
+{% endblock navbar %} 
+
+{% block body %}
 <!-- Full Page Intro -->
 <div class="view" style="background-image: url('images/livraison.jpg'); background-repeat: no-repeat; background-size: cover;">
 
@@ -16,14 +24,13 @@
         </div>
     </div>
 </div>
-<main class="container mt-5 pt-5">
+<main class="container">
     <div class="container">
 
         <!-- ------------------------------SERVICES PARTICULIER------------------- -->
-        <hr class="my-5">
         <section>
 
-            <h2 class="my-5 h3 text-center" id="particulier">SERVICES AUX PARTICULIERS</h2>
+            <h2 class="my-5 h3 text-center text-uppercase" id="particulier">Services aux particuliers</h2>
 
 
             <!-- Grid row -->
@@ -36,7 +43,7 @@
                     <a href="" class="custom-card">
                         <div class="card blue-gradient text-center z-depth-2" style="width: 15rem; display: inline-block">
                             <div class="card-body">
-                                <h5 class="card-title text-uppercase font-weight-bold white-text mt-2 mb-3"><strong>S'INSCRIRE</strong><i class="fas fa-user ml-3"></i></h5>
+                                <h5 class="card-title text-uppercase font-weight-bold white-text mt-2 mb-3"><strong>S'inscrire</strong><i class="fas fa-user ml-3"></i></h5>
                                 </br>
                                 <p class="card-text-center white-text mb-0">Rejoignez-nous vite !</p>
                                 </br>
@@ -59,7 +66,7 @@
                     <a href="" class="custom-card">
                         <div class="card purple-gradient text-center z-depth-2" style="width: 15rem; display: inline-block">
                             <div class="card-body">
-                                <h5 class="card-title text-uppercase font-weight-bold white-text mt-2 mb-3"><strong>ABONNEMENT</strong><i class="fas fa-heart ml-3"></i></h5>
+                                <h5 class="card-title text-uppercase font-weight-bold white-text mt-2 mb-3"><strong class=" text-uppercase">Abonnement</strong><i class="fas fa-heart ml-3"></i></h5>
                                 <p class="card-text-center white-text mb-0">Nous vous proposons plusieurs services d'abonnement</p>
                                 </br>
                                 <p class="card-text-center white-text mb-0">Cliquez pour les découvrir</p>
@@ -77,7 +84,7 @@
                     <a href="" class="custom-card">
                         <div class="card blue-gradient text-center z-depth-2" style="width: 15rem; display: inline-block">
                             <div class="card-body">
-                                <h5 class="card-title text-uppercase font-weight-bold white-text mt-2 mb-3"><strong>TROUVER R.C.I</strong><i class="fas fa-map ml-3"></i></h5>
+                                <h5 class="card-title text-uppercase font-weight-bold white-text mt-2 mb-3"><strong class="text-uppercase">Trouver R.C.I</strong><i class="fas fa-map ml-3"></i></h5>
                                 <p class="card-text-center white-text mb-0">N'attendez plus trouver votre relais colis près de chez vous.</p>
 
                             </div>
@@ -92,7 +99,7 @@
                     <a href="" class="custom-card">
                         <div class="card purple-gradient text-center z-depth-2" style="width: 15rem; display: inline-block">
                             <div class="card-body">
-                                <h5 class="card-title text-uppercase font-weight-bold white-text mt-2 mb-3"><strong>SE FAIRE LIVRER</strong><i class="fas fa-cube ml-3"></i></h5>
+                                <h5 class="card-title text-uppercase font-weight-bold white-text mt-2 mb-3"><strong class="text-uppercase">Se faire livrer</strong><i class="fas fa-cube ml-3"></i></h5>
                                 <p class="card-text-center white-text mb-0">Vous voulez passer une commande et vous faire livré dans un relais.</p>
                                 <p class="card-text-center white-text mb-0">Cliquez pour voir la suite.</p>
                             </div>
@@ -114,92 +121,20 @@
         <!-----------------------------------Section SERVICES PROFESSIONEL---------------------------------->
         <section id="professionel" style="background-color: #f5f8fa">
             <hr class="mb-1">
-            <h2 class="my-5 h3 text-center">SERVICES AUX PROFESSIONELS</h2>
-
-            <!--First row-->
-            {#
-            <div class="row features-small mt-5 wow fadeIn"> #} {#
-                <!--Grid column-->
-                <div class="col-xl-6 col-lg-6">
-                    <!--Grid row-->
-                    <div class="row">
-                        <div class="col-2">
-                            <i class="fas fa-cube fa-4x mb-1 indigo-text" aria-hidden="true"></i>
-                        </div>
-                        <div class="col-10 mb-2 pl-3">
-                            <h5 class="feature-title font-bold mb-1">Adhérer à RCI</h5>
-                            <p class="grey-text mt-2">Chrome, Firefox, IE, Safari, Opera, Microsoft Edge - MDB loves all browsers; all browsers love MDB.
-                            </p>
-                        </div>
-                    </div>
-                    <!--/Grid row-->
-                </div>
-                <!--/Grid column-->#} {#
-                <!--Grid column-->
-                <div class="col-xl-6 col-lg-6">
-                    <!--Grid row-->
-                    <div class="row">
-                        <div class="col-2">
-                            <i class="fas fa-cubes fa-4x mb-1 indigo-text" aria-hidden="true"></i>
-                        </div>
-                        <div class="col-10 mb-5">
-                            <h5 class="feature-title font-bold mb-1">Les points relais RCI</h5>
-                            <p class="grey-text mt-2">MDB becomes better every month. We love the project and enhance as much as possible.
-                            </p>
-                        </div>
-
-                    </div>
-                    <!--/Grid row-->
-                </div> #} {#
-                <!--Grid column-->
-                <div class="col-xl-6 col-lg-6">
-                    <!--Grid row-->
-                    <div class="row">
-                        <div class="col-2">
-                            <i class="fas fa-truck fa-4x mb-1 indigo-text" aria-hidden="true"></i>
-                        </div>
-                        <div class="col-10 mb-5">
-                            <h5 class="feature-title font-bold mb-1">Devenir RCI</h5>
-                            <p class="grey-text mt-2">Our society grows day by day. Visit our forum and check how it is to be a part of our family.
-                            </p>
-                        </div>
-                    </div>
-                    <!--/Grid row-->
-                </div>
-                <!--/Grid column-->
-                <div class="col-xl-6 col-lg-6">
-                    <!--Grid row-->
-                    <div class="row">
-                        <div class="col-2">
-                            <i class="fas fa-truck-loading fa-4x mb-1 indigo-text" aria-hidden="true"></i>
-                        </div>
-                        <div class="col-10 mb-2">
-                            <h5 class="feature-title font-bold mb-1">Passer une commande Internet via RCI Colis</h5>
-                            <p class="grey-text mt-2">Material Design for Bootstrap comes with both, compiled, ready to use libraries including all features as well as modules for CSS (SASS files) and JS.</p>
-                        </div>
-                    </div>
-                    <!--/Grid row-->
-                </div> #}
-
+            <h2 class="my-5 h3 text-center text-uppercase">Service aux professionnels</h2>
                 <p class="text-center">Vous êtes un professionel et vous voulez profitez de nos offres de livraisons de colis</p>
                 </br>
                 <p class="text-center">N'attendez plus pour bénéficier de tarifs adapté a vos besoins</p>
                 </br>
                 <p class="text-center"><a href="">Cliquez-ici</a></p>
                 </br>
-
-
-
-
             </div>
         </section>
+
         <hr class="my-5">
 
-        <!--------------------------A PROPOS------------------------------->
         <section>
-
-            <h3 class="h3 text-center mb-5">A propos de nous</h3>
-
+            <h3 class="h3 mb-5 text-center text-uppercase">A propos de nous</h3>
             <!--Grid row-->
             <div class="row wow fadeIn">
 
