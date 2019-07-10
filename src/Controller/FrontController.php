@@ -22,7 +22,7 @@ class FrontController extends AbstractController
      */
     public function historique()
     {
-        return $this->render('front/propos/historique.html.twig', [
+        return $this->render('front/historique.html.twig', [
             'controller_name' => 'FrontController',
         ]);
     }
@@ -32,7 +32,7 @@ class FrontController extends AbstractController
      */
     public function cguv()
     {
-        return $this->render('front/propos/cguv.html.twig', [
+        return $this->render('front/cguv.html.twig', [
             'controller_name' => 'FrontController',
         ]);
     }
@@ -42,7 +42,7 @@ class FrontController extends AbstractController
      */
     public function mentions()
     {
-        return $this->render('front/propos/mentions.html.twig', [
+        return $this->render('front/mentions.html.twig', [
             'controller_name' => 'FrontController',
         ]);
     }

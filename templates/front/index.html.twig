@@ -1,4 +1,12 @@
-{% extends 'base_front.html.twig' %} {% block title %}R.C.I Colis{% endblock %} {% block body %}
+{% extends 'base_front.html.twig' %}
+
+{% block title %}R.C.I Colis{% endblock %}
+
+{% block navbar %}
+    {% include "navbar/nav_transparent.html.twig" %}
+{% endblock navbar %}
+
+{% block body %}
 <!-- Full Page Intro -->
 <div class="view" style="background-image: url('images/livraison.jpg'); background-repeat: no-repeat; background-size: cover;">
 
@@ -10,23 +18,17 @@
             <h1 class="mb-4">
                 <strong>R.C.I Colis </br>
           Relais Colis Indépendant Franco-Suisse</strong>
-            </h1>
-            <a href="#particulier"><button type="button" class="btn btn-outline-special-color waves-effect text-white">Particulier</button></a>
-            <a href="#professionel"><button type="button" class="btn btn-outline-special-color waves-effect text-white">Professionel</button></a>
-        </div>
+        </h1>
+        <button type="button" class="btn btn-outline-white rounded-pill waves-effect">Particulier</button>
+        <button type="button" class="btn btn-outline-white rounded-pill waves-effect">Professionel</button>
+      </div>
     </div>
-</div>
-<main class="container mt-5 pt-5">
-    <div class="container">
-
-        <!-- ------------------------------SERVICES PARTICULIER------------------- -->
-        <hr class="my-5">
-        <section>
-
-            <h2 class="my-5 h3 text-center" id="particulier">SERVICES AUX PARTICULIERS</h2>
-
-
-            <!-- Grid row -->
+  </div>
+    <main class="container mt-5 pt-5">
+           <div class="container">
+      <section>
+        
+       <!-- Grid row -->
             <div class="row">
 
                 <!-- Grid column -->
