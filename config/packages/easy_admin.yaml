@@ -2,6 +2,8 @@ easy_admin:
     site_name: 'RCI Colis'
     formats:
       datetime: 'd/m/Y H:i'
+    design:
+      menu: [{label: 'Retour au site', url: '../', icon: ''}, 'User', 'RCI']
     entities:
       User:
         class: App\Entity\User
@@ -32,6 +34,24 @@ easy_admin:
               { property: 'enabled', label: 'Compte activé ?' }]
         form:
           fields: *fieldsUser
+      RCI:
+        class: App\Entity\RCI
+        label: "Relais Colis"
+        list:
+          fields: &fieldRCI
+            [{ property: 'enseigne', label: "Enseigne" }, 
+            { property: 'activite', label: 'Activité' },
+            { property: 'contact', label: 'Contact' },
+            { property: 'email', label: 'Adresse email' },
+            { property: 'adresse', label: 'Adresse' },
+            { property: 'codePostal', label: 'Code postal' },
+            { property: 'ville', label: 'Ville' },
+            { property: 'pays', label: 'Pays' },
+            { property: 'telephone', label: 'Numéro de téléphone' }]
+        edit:
+          fields: *fieldRCI
+        form:
+          fields: *fieldRCI
       #  List the entity class name you want to manage
       #  - App\Entity\Product
       #  - App\Entity\Category

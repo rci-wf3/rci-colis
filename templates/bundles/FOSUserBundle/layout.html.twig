@@ -16,14 +16,14 @@
             {% block navbar %}
                 {% include "navbar/nav_black.html.twig" %}
             {% endblock navbar %}
-        <div id="histo">
+        <div id="histo" class="pb-5 mb-4">
             {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                 {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
                 <a href="{{ path('fos_user_security_logout') }}">
                     {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
                 </a>
             {% else %}
-                <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
+                
             {% endif %}
         </div>
 
@@ -37,12 +37,12 @@
             {% endfor %}
         {% endif %}
 
-        <div>
+        <div id="errorMessage" class="d-flex justify-content-center pb-5">
             {% block fos_user_content %}
             {% endblock fos_user_content %}
         </div>
         <!-- Footer -->
-      <footer class="page-footer text-center font-small mt-4 wow bg-dark">
+      <footer class="page-footer text-center font-small wow bg-dark mt-5">
 
             <hr class="my-4">
     
@@ -51,8 +51,8 @@
               <div class="col-md-2 d-flex flex-column">
                 <h5 class="text-left">À propos de relais colis</h5>
                 <ul class="p-0">
-                  <li class="text-left list-unstyled"><a href="">Qui Sommes nous?</a></li>
-                  <li class="text-left list-unstyled"><a href="">Nos Abonnement</a></li>
+                  <li class="text-left list-unstyled"><a href="">Qui sommes-nous?</a></li>
+                  <li class="text-left list-unstyled"><a href="">Nos abonnements</a></li>
                 </ul>
               </div>
               <div class="col-md-2 d-flex flex-column">
@@ -68,8 +68,8 @@
               <div class="col-md-2 d-flex flex-column">
                 <h5 class="text-left">Besoin d'aide ?</h5>
                 <ul class="p-0">
-                  <li class="text-left list-unstyled"><a href="">Nous contacter</a></li>
-                  <li class="text-left list-unstyled"><a href="">Consultez notre FAQ</a></li>
+                  <li class="text-left list-unstyled"><a href="{{path('front_contact')}}">Nous contacter</a></li>
+                  <li class="text-left list-unstyled"><a href="#">Consultez notre FAQ</a></li>
                 </ul>
               </div>
             </div>
