@@ -1,34 +1,32 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}R.C.I Colis{% endblock %}</title>
-        {% block stylesheets %}
-            {% include "includes/stylesheets.html.twig" %}
-        {% endblock %}
-        <link rel="stylesheet" href="{{ absolute_url(asset('css/style.css')) }}">
-    </head>
 
-    <body>
-      <div class="loader-container">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}R.C.I Colis{% endblock %}</title>
+    {% block stylesheets %} {% include "includes/stylesheets.html.twig" %} {% endblock %}
+    <link rel="stylesheet" href="{{ absolute_url(asset('css/style.css')) }}">
+</head>
+
+<body>
+    <div class="loader-container">
         <div class="loader"><img src="{{ absolute_url(asset('images/giphy.gif')) }}" alt="loader colis"></div>
-      </div>
-        
-        <header>
-          {% block navbar %}
-          {% endblock navbar %}
-        </header>
-        
-        {% block body %}
-        {% endblock %}
+    </div>
 
-       <!-- Footer -->
-      <footer class="page-footer text-center font-small mt-4 wow bg-dark">
+    <header>
+        {% block navbar %} {% endblock navbar %}
+    </header>
+
+    {% block body %} {% endblock %}
+
+    <!-- Footer -->
+    <footer class="page-footer text-center font-small mt-4 wow blue-gradient">
 
         <hr class="my-4">
 
         <!-- Social icons -->
         <div class="row w-100 d-flex- justify-content-center">
+<<<<<<< HEAD
           <div class="col-md-2 d-flex flex-column">
             <h5 class="text-left">À propos de relais colis</h5>
             <ul class="p-0">
@@ -53,21 +51,46 @@
               <li class="text-left list-unstyled"><a href="#">Consultez notre FAQ</a></li>
             </ul>
           </div>
+=======
+            <div class="col-md-2 d-flex flex-column">
+                <h5 class="text-left">À propos de relais colis</h5>
+                <ul class="p-0">
+                    <li class="text-left list-unstyled"><a href="">Qui Sommes nous?</a></li>
+                    <li class="text-left list-unstyled"><a href="">Nos Abonnement</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 d-flex flex-column">
+                <h5 class="text-left">Informations légales</h5>
+                <ul class="p-0">
+                    <li class="text-left list-unstyled"><a href="{{path('front_cguv')}}">CGUV</a></li>
+                    <li class="text-left list-unstyled"><a href="{{path('front_mentions')}}">Mentions Légales</a></li>
+                    <li class="text-left list-unstyled"><a href="">Politique de confidentialité</a></li>
+                    <li class="text-left list-unstyled"><a href="">Utilisation des cookies</a></li>
+                    <li class="text-left list-unstyled"><a href="">Crédits</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 d-flex flex-column">
+                <h5 class="text-left">Besoin d'aide ?</h5>
+                <ul class="p-0">
+                    <li class="text-left list-unstyled"><a href="{{path('front_contact')}}">Nous contacter</a></li>
+                    <li class="text-left list-unstyled"><a href="#">Consultez notre FAQ</a></li>
+                </ul>
+            </div>
+>>>>>>> master
         </div>
 
         <!--Copyright-->
         <div class="footer-copyright py-3">
-          © 2019 Copyright:
-          <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> MDBootstrap.com </a>
+            © 2019 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> MDBootstrap.com </a>
         </div>
         <!--/.Copyright-->
 
-      </footer>
-      <!-- Footer -->
+    </footer>
+    <!-- Footer -->
 
-      {% block javascripts %}
-        {% include "includes/javascripts.html.twig" %}
-      {% endblock %}
+    {% block javascripts %} {% include "includes/javascripts.html.twig" %} {% endblock %}
 
-    </body>
+</body>
+
 </html>
