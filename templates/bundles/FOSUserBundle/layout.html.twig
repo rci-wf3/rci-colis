@@ -23,7 +23,7 @@
                     {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
                 </a>
             {% else %}
-                <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
+                
             {% endif %}
         </div>
 
@@ -37,7 +37,7 @@
             {% endfor %}
         {% endif %}
 
-        <div>
+        <div class="d-flex justify-content-center">
             {% block fos_user_content %}
             {% endblock fos_user_content %}
         </div>
