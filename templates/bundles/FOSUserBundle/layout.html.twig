@@ -16,7 +16,7 @@
             {% block navbar %}
                 {% include "navbar/nav_black.html.twig" %}
             {% endblock navbar %}
-        <div id="histo">
+        <div id="histo" class="pb-5 ">
             {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                 {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
                 <a href="{{ path('fos_user_security_logout') }}">
@@ -42,7 +42,7 @@
             {% endblock fos_user_content %}
         </div>
         <!-- Footer -->
-      <footer class="page-footer text-center font-small mt-4 wow bg-dark">
+      <footer class="page-footer text-center font-small wow bg-dark mt-5">
 
             <hr class="my-4">
     
