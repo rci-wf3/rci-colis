@@ -16,7 +16,7 @@
             {% block navbar %}
                 {% include "navbar/nav_black.html.twig" %}
             {% endblock navbar %}
-        <div id="histo" class="pb-5 ">
+        <div id="histo" class="pb-5 mb-4">
             {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                 {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
                 <a href="{{ path('fos_user_security_logout') }}">
@@ -37,7 +37,7 @@
             {% endfor %}
         {% endif %}
 
-        <div class="d-flex justify-content-center">
+        <div id="errorMessage" class="d-flex justify-content-center pb-5">
             {% block fos_user_content %}
             {% endblock fos_user_content %}
         </div>
