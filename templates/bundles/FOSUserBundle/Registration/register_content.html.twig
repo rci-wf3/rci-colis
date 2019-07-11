@@ -1,8 +1,44 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
-{{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
-    {{ form_widget(form) }}
-    <div>
-        <input class="btn-outline-dark rounded-pill active px-4 waves-effect waves-light " type="submit" value="{{ 'registration.submit'|trans }}" />
+
+    <div id="login" class="col-xl-6 col-md-11 col-12     col-sm-1 d-flex align-items-center justify-content-center pb-5">
+            <div class="card_bis w-75 z-depth-4">
+               
+                    <h3 class="card-header blue-gradient white-text text-center py-4"><strong>Inscription</strong></h3>
+                    <div class="card-body px-lg-5 pt-0">
+                        {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register text-center'}}) }}
+                        <div class="md-form md-bg">
+                            {{ form_widget(form.username,{'attr': { 'class': 'form-control' }} ) }}
+                            {{ form_label(form.username, null, { 'label': 'Nom de compte', 'label_attr': {'class': ''} }) }}
+                        </div>
+
+                        <div class="md-form md-bg">
+                            {{ form_widget(form.email,{'attr': { 'class': 'form-control' }} ) }}
+                            {{ form_label(form.email, null, { 'label': 'Adresse mail', 'label_attr': {'class': ''} }) }}
+                        </div>
+
+                        <div class="md-form md-bg">
+                            {{ form_widget(form.plainPassword.first,{'attr': { 'class': 'form-control' }} ) }}
+                            {{ form_label(form.plainPassword.first, null, {'label_attr': {'class': ''} }) }}
+                        </div>
+
+                        <div class="md-form md-bg">
+                            {{ form_widget(form.plainPassword.second,{'attr': { 'class': 'form-control' }} ) }}
+                            {{ form_label(form.plainPassword.second, null, { 'label_attr': {'class': ''} }) }}
+                        </div>
+                        
+                        
+                        <input class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit" value="{{ 'registration.submit'|trans }}" />
+                        <p>Déjà membre?</p>
+                        <a href="{{ path('fos_user_security_login') }}">Connectez-vous!</a>
+                        
+                        {{ form_end(form) }}
+                    </div>
+                
+        </div> 
     </div>
-{{ form_end(form) }}
+
+
+
+
+
