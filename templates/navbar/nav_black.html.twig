@@ -24,9 +24,14 @@
                     <div class="row dropdown-menu dropdown-primary dropright" aria-labelledby="navbarDropdownnMenuLink">
                         <a class="dropdown-item dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Particuliers</a>
                         <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Inscription</a>
-                            <a class="dropdown-item" href="#">Les points relais RCI</a>
-                            <a class="dropdown-item" href="#">Passer une commande</a>
+                            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                                <a class="dropdown-item" href="#">Passer une commande</a>
+                                <a class="dropdown-item" href="#">Les points relais RCI</a>
+                            {% else %}
+                                <a class="dropdown-item" href="#">Les points relais RCI</a>
+                                <a class="dropdown-item" href="#">Passer une commande</a>
+                                <a class="dropdown-item" href="{{ path('fos_user_registration_register') }}">Inscription</a>
+                            {% endif %}
                         </div>
                         <a class="dropdown-item" href="">Professionnels</a>
                         <a class="dropdown-item" href="">Devenir relais colis indépendant</a>
