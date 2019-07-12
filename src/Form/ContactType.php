@@ -21,7 +21,7 @@ class ContactType extends AbstractType
             ->add('nom', TextType::class)
             ->add('prenom', TextType::class)
             ->add('adresse', TextType::class)
-            ->add('cp', NumberType::class)
+            ->add('code_postal', NumberType::class)
             ->add('ville', TextType::class)
             ->add('pays', CountryType::class)
             ->add('email', EmailType::class)
