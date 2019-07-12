@@ -57,4 +57,14 @@ class FrontController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("/relais", name="front_relais")
+     */
+    public function relais()
+    {
+        return $this->render('front/relais.html.twig', [
+            'controller_name' => 'FrontController',
+        ]);
+    }
+
 }
