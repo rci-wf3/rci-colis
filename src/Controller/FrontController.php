@@ -67,4 +67,15 @@ class FrontController extends AbstractController
         ]);
     }
 
+
+    /**
+     * @Route("/tarifs", name="front_tarifs")
+     */
+    public function tarifs()
+    {
+        return $this->render('front/tarifs.html.twig', [
+            'controller_name' => 'FrontController',
+        ]);
+    }
+
 }
