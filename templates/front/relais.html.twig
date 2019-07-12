@@ -6,13 +6,59 @@
     {% include "navbar/nav_black.html.twig" %} 
 {% endblock navbar %} 
 {% block body %}
-    <section id="histo" class="container text-center">
-        <h1>Cartes des relais</h1>
-        <p>Ici Vous trouverez toutes les adresses des relais colis indépendant pour recevoir vos achat</p>
-        <div class="d-flex justify-content-center">
+<section id="histo" class=" text-center">
+        <div id="particulier"><h2 class="text-primary mb-1 font-weight-bold mb-3">Carte des relais</h2></div>
+        <p>Ici vous trouverez toutes les adresses des relais colis indépendants pour recevoir vos achats</p>
+        <div class="d-flex justify-content-center pb-5 mb-5">
                 <iframe src="https://www.google.com/maps/d/embed?mid=1NXiEA7J7cAZDMch26KsHQj3qDy1UHhD1" width="640" height="480">
                 </iframe>
         </div>
+        <hr class="w-75">
+
+        <article class="mt-5 d-flex flex-column justify-content-center align-items-center">
+        	<h1 class="text-primary mb-1 font-weight-bold mt-5">Nos relais </h1>
+        	<div class="row container-fluid p-3 justify-content-center">
+        		<!-- Grid column -->
+                <div class="col-lg-3 col-md-12 z-depth-4 p-0 m-3 pb-2">
+                	<h3 class="card-header blue-gradient border border-0 white-text text-center mb-3"><strong>RCI BI1 (Atac)</strong></h3>
+                    <p class="card-text-center  mb-0">7, rue Pierre Berçot</p>
+                    <p class="card-text-center  mb-0">25130 Villers le Lac</p>
+                    <p class="card-text-center  mb-0">Tél : 03 81 68 42 00</p>
+                    <p class="card-text-center  mb-0">Moyens de paiement : tous</p>
+                    <p class="card-text-center  mb-0">Horaires : du lundi au samedi 8h30 /19h30<br> Dimanche : 9h / 12h30</p>                 
+                </div>
+                <div class="col-lg-3 col-md-12 z-depth-4 p-0 m-3 pb-2">
+                	<h3 class="card-header blue-gradient border border-0 white-text text-center mb-3"><strong>RCI « Maison & Passion »</strong></h3>
+                    <p class="card-text-center  mb-0">1 Rue de Besançon (HyperU)</p>
+                    <p class="card-text-center  mb-0">25300 DOUBS</p>
+                    <p class="card-text-center  mb-0">Tél : 03 81 46 72 47</p>
+                    <p class="card-text-center  mb-0">Moyens de paiement : tous</p>
+                    <p class="card-text-center  mb-0">Horaires : du lundi au samedi 8h30 / 20h</p>                 
+                </div>
+                <div class="col-lg-3 col-md-12 z-depth-4 p-0 m-3 pb-2">
+                	<h3 class="card-header blue-gradient border border-0 white-text text-center mb-3"><strong>RCI BI1 (Atac)</strong></h3>
+                    <p class="card-text-center  mb-0">1961 rue de Franche Comté</p>
+                    <p class="card-text-center  mb-0">39220    Bois d’Amont</p>
+                    <p class="card-text-center  mb-0">Tél : 03 84 60 99 25</p>
+                    <p class="card-text-center  mb-0">Moyens de paiement : chèques ou espèces</p>
+                    <p class="card-text-center  mb-0">
+                    	Horaires : du lundi au vendredi <br>
+                     	6h30 /12h15 – 14h30 / 19h15<br>
+                     	Samedi non stop : 7h / 19h15<br>
+                     	Dimanche : 7h / 12h
+                  	</p>                 
+                </div>
+                <div class="col-lg-3 col-md-12 z-depth-4 p-0 m-3 pb-2">
+                	<h3 class="card-header blue-gradient border border-0 white-text text-center mb-3"><strong>RCI Intermarché </strong></h3>
+                    <p class="card-text-center  mb-0">52 Route de Lausanne</p>
+                    <p class="card-text-center  mb-0">25370 Les Hôpitaux-Neufs</p>
+                    <p class="card-text-center  mb-0">Tél : 03 81 49 19 62</p>
+                    <p class="card-text-center  mb-0">Moyens de paiement : tous</p>
+                    <p class="card-text-center  mb-0">Horaires : du lundi au samedi 8h45 / 19h<br> Dimanche 8h45 / 12h15</p>                 
+                </div>
+        	</div>
+        </article>
     </section>
+
     
 {% endblock body %}
