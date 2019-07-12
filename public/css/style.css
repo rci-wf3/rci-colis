@@ -719,3 +719,8 @@ h2 {
 .accordion-section .panel-default .panel-body {
     font-size: 1rem;
 }
+
+.table-info>td,
+.table-info>th {
+    background-color: #44c0f6;
+}

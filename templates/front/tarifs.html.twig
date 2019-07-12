@@ -1,0 +1,130 @@
+{% extends 'base_front.html.twig' %} {% block title %}Nos Tarifs{% endblock %} {% block navbar %} {% include "navbar/nav_black.html.twig" %} {% endblock navbar %} {% block body %}
+
+<!--Table-->
+<section id="histo">
+    <h2 class="text-center mb-5">Nos Tarifs</h2>
+
+    <p class="text-center">Commission par colis réceptionné : Attention, un des côté doit impérativement être inférieur à 50 cm²</p>
+    <p class="text-center">Livraison sur palette : Attention, ce type de livraison demandant des moyens logistiques supplémentaires, il est impératif de demander un devis, </br>
+        car uniquement certains relais sont équipés et un coût supplémentaire de 24€ HT / palette sera appliqué</p>
+
+    <table class="table table-striped w-auto container-fluid mt-3">
+
+        <!--Table head-->
+        <thead>
+            <tr>
+                <th>Tranche de poids</th>
+                <th>Poids Colis </th>
+                <th>Poids standard </th>
+                <th>Dim Colis</th>
+                <th>Dim maxi</th>
+                <th>Tranche de dimensions</th>
+                <th>Calcul prix</th>
+
+            </tr>
+        </thead>
+        <!--Table head-->
+
+        <!--Table body-->
+        <tbody>
+            <tr class="table-info text-white">
+                <th scope="row">De 0 ≤ 20 g</th>
+                <td>X</td>
+                <td>20</td>
+                <td>X</td>
+                <td>X</td>
+                <td>Courriers / revues</td>
+                <td>2,00 €</td>
+            </tr>
+
+            <tr>
+                <th scope="row">De 20 g ≤ 100 g</th>
+                <td>X</td>
+                <td>100</td>
+                <td>X</td>
+                <td>X</td>
+                <td>Courrier ou très petits colis</td>
+                <td>3,00 €</td>
+            </tr>
+
+            <tr class="table-info text-white">
+                <th scope="row">101 g > X ≤ 300 g</th>
+                <td>X</td>
+                <td>300</td>
+                <td>X</td>
+                <td>X</td>
+                <td>L+l+H ≤ 150 cm</td>
+                <td>4,00 €</td>
+            </tr>
+
+            <tr>
+                <th scope="row">301 g > X ≤ 10 kg</th>
+                <td>X</td>
+                <td>1000</td>
+                <td>X</td>
+                <td>150</td>
+                <td>L+l+H ≤ 150 cm</td>
+                <td>5,00 €</td>
+            </tr>
+
+            <tr class="table-info text-white">
+                <th scope="row">10 kg > X ≤ 15 kg</th>
+                <td>X</td>
+                <td>1500</td>
+                <td>X</td>
+                <td>150</td>
+                <td>L+l+H ≤ 150 cm</td>
+                <td>6,00 €</td>
+            </tr>
+
+            <tr>
+                <th scope="row">Si X > 15 Kg ≤ 150 cm</th>
+                <td>2500</td>
+                <td>1500</td>
+                <td>X</td>
+                <td>150</td>
+                <td>Ex: 25 kg</td>
+                <td>10,00 €</td>
+            </tr>
+
+            <tr class="table-info text-white">
+                <th scope="row">Si X ≤10 Kg > 150 cm</th>
+                <td>X</td>
+                <td>1500</td>
+                <td>200</td>
+                <td>150</td>
+                <td>Ex: 200 cm</td>
+                <td>6,67 €</td>
+            </tr>
+
+            <tr>
+                <th scope="row">Si X > 10 Kg ≤ 15 kg > 150 cm</th>
+                <td>X</td>
+                <td>1500</td>
+                <td>200</td>
+                <td>150</td>
+                <td>Ex: 200 cm</td>
+                <td>8,00 €</td>
+            </tr>
+
+            <tr class="table-info text-white">
+                <th scope="row">Si X > 15 kg > 150 cm</th>
+                <td>2000</td>
+                <td>1500</td>
+                <td>250</td>
+                <td>150</td>
+                <td>Ex: 20 kg et 250 cm</td>
+                <td>13,33 €</td>
+            </tr>
+        </tbody>
+        <!--Table body-->
+
+
+    </table>
+</section>
+<!--Table-->
+
+
+
+
+{% endblock body %}

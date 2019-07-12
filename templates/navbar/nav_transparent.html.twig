@@ -25,13 +25,11 @@
                         <a class="dropdown-item dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Particuliers</a>
                         <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
                             {% if is_granted('IS_AUTHENTICATED_FULLY') %}
-                                <a class="dropdown-item" href="{{ path('front_relais')}}">Les points relais RCI</a>
-                                <a class="dropdown-item" href="#">Passer une commande</a>
-                            {% else %}
                             <a class="dropdown-item" href="{{ path('front_relais')}}">Les points relais RCI</a>
-                                <a class="dropdown-item" href="#">Passer une commande</a>
-                                <a class="dropdown-item" href="{{ path('fos_user_registration_register') }}">Inscription</a>
-                            {% endif %}
+                            <a class="dropdown-item" href="#">Passer une commande</a> {% else %}
+                            <a class="dropdown-item" href="{{ path('front_relais')}}">Les points relais RCI</a>
+                            <a class="dropdown-item" href="#">Passer une commande</a>
+                            <a class="dropdown-item" href="{{ path('fos_user_registration_register') }}">Inscription</a> {% endif %}
                         </div>
                         <a class="dropdown-item" href="">Professionnels</a>
                         <a class="dropdown-item" href="">Devenir relais colis indépendant</a>
@@ -40,7 +38,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-white" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">NOS ABONNEMENTS</a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Nos tarifs</a>
+                        <a class="dropdown-item" href="{{ path('front_tarifs')}}">Nos tarifs</a>
                         <a class="dropdown-item" href="#">Formule à l’unité</a>
                         <a class="dropdown-item" href="#">Formule sur devis</a>
                     </div>
