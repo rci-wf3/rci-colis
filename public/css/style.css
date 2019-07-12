@@ -10,6 +10,10 @@
     background-color: #203284!important;
 } */
 
+.top-nav-collapse{
+    background-image: linear-gradient(to left,#324aa7, #44c0f6);
+}
+
 
 /*------------ FIN CSS de la NAVBAR et FOOTER------------------*/
 
@@ -301,8 +305,7 @@ margin-top: 10%;
 
 .cd-timeline-navigation a::after {
     /* arrow icon */
-    content: "";
-    font-family: FontAwesome;
+    content: '';
     position: absolute;
     height: 16px;
     width: 16px;
@@ -315,7 +318,7 @@ margin-top: 10%;
     -ms-transform: translateX(-50%) translateY(-50%);
     -o-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(../images/arrow-right-solid.svg) no-repeat 0 0;
+    background: url(../img/cd-arrow.svg) no-repeat 0 0;
 }
 
 .cd-timeline-navigation a.prev {
@@ -576,7 +579,6 @@ img {
 
 #histo {
     padding-top: 15vh;
-    padding-bottom: 10vh;
 }
 
 
@@ -646,23 +648,6 @@ body,
     margin-bottom: 7rem!important;
 }
 
-.middle {
-    position: static;
-    top: 50%;
-    width: 100%;
-    transform: translateY(-50%);
-}
-
-.counting-sec {
-    background: linear-gradient(40deg, #45cafc, #ff6ec4);
-}
-
-.inner-width {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-}
-
 .col {
     flex: 1;
     text-align: center;
@@ -680,47 +665,3 @@ body,
     font-size: 40px;
     margin: 20px 0;
 }
-
-
-/* CSS FAQ */
-
-h2 {
-    font-family: Arial, Verdana;
-    font-weight: 800;
-    font-size: 2.5rem;
-    color: #014c8c;
-    text-transform: uppercase;
-}
-
-.accordion-section .panel-default>.panel-heading {
-    border: 0;
-    background: #f4f4f4;
-    padding: 0;
-}
-
-.accordion-section .panel-default .panel-title a {
-    display: block;
-    font-style: initial;
-    font-size: 1.2rem;
-}
-
-.accordion-section .panel-default .panel-title a:after {
-    font-family: 'FontAwesome';
-    font-style: normal;
-    font-size: 3rem;
-    content: "\f106";
-    color: #1f7de2;
-    float: right;
-    margin-top: -12px;
-}
-
-.accordion-section .panel-default .panel-title a.collapsed:after {
-    content: "\f107";
-}
-
-.accordion-section .panel-default .panel-body {
-    font-size: 1rem;
-}
-
-
-/* FIN CSS FAQ */
