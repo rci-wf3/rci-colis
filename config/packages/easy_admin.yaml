@@ -23,8 +23,6 @@ easy_admin:
           fields: &fieldsUser
             [{ property: 'username', label: "Nom d'utilisateur" }, 
               { property: 'email', label: 'Adresse email' }, 
-              { property: 'password', label: 'Mot de passe' },
-              { property: 'roles', label: 'Role(s)' },
               { property: 'nom', label: 'Nom' },
               { property: 'prenom', label: 'Prénom' },
               { property: 'adresse', label: 'Adresse' },
