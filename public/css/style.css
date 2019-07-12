@@ -10,8 +10,8 @@
     background-color: #203284!important;
 } */
 
-.top-nav-collapse{
-    background-image: linear-gradient(to left,#324aa7, #44c0f6);
+.top-nav-collapse {
+    background-image: linear-gradient(to left, #324aa7, #44c0f6);
 }
 
 
@@ -579,6 +579,7 @@ img {
 
 #histo {
     padding-top: 15vh;
+    padding-bottom: 10vh;
 }
 
 
@@ -664,4 +665,45 @@ body,
 .num {
     font-size: 40px;
     margin: 20px 0;
+}
+
+
+/* CSS FAQ  */
+
+h2 {
+    font-family: Arial, Verdana;
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #014c8c;
+    text-transform: uppercase;
+}
+
+.accordion-section .panel-default>.panel-heading {
+    border: 0;
+    background: #f4f4f4;
+    padding: 0;
+}
+
+.accordion-section .panel-default .panel-title a {
+    display: block;
+    font-style: initial;
+    font-size: 1.2rem;
+}
+
+.accordion-section .panel-default .panel-title a:after {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-size: 3rem;
+    content: "\f106";
+    color: #1f7de2;
+    float: right;
+    margin-top: -12px;
+}
+
+.accordion-section .panel-default .panel-title a.collapsed:after {
+    content: "\f107";
+}
+
+.accordion-section .panel-default .panel-body {
+    font-size: 1rem;
 }
