@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
+use App\Entity\RCI;
 
 class FrontController extends AbstractController
 {
@@ -62,8 +63,10 @@ class FrontController extends AbstractController
      */
     public function relais()
     {
+        $relais = $this->getDoctrine()->getRepository(RCI::class)->findAll();
         return $this->render('front/relais.html.twig', [
             'controller_name' => 'FrontController',
+            'relais' => $relais,
         ]);
     }
 
