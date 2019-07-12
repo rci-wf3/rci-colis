@@ -26,6 +26,7 @@ class ContactType extends AbstractType
             ->add('pays', CountryType::class)
             ->add('email', EmailType::class)
             ->add('telephone', TelType::class)
+            ->add('message', TelType::class)
             ->add('conditions', CheckboxType::class)
             ->add('envoyer', SubmitType::class)
         ;
