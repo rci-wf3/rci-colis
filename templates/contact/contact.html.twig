@@ -9,11 +9,11 @@
     {% block body %}
 
      <div>
-        {{ form_start(contactForm) }}
-        {{ form_widget() }}
+        {{ form_start(controller_name) }}
+        {{ form_widget(controller_name) }}
 
             <button type="submit" value="envoyer">Envoyer</button>      
-        {{ form_end(contactForm) }}
+        {{ form_end(controller_name) }}
     </div>
 
     {% endblock %}
