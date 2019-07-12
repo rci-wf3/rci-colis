@@ -10,6 +10,10 @@
     background-color: #203284!important;
 } */
 
+.top-nav-collapse{
+    background-image: linear-gradient(to left,#324aa7, #44c0f6);
+}
+
 
 /*------------ FIN CSS de la NAVBAR et FOOTER------------------*/
 
