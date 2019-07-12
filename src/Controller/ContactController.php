@@ -2,9 +2,10 @@
 
 namespace App\Controller;
 
+use Form\ContactType;
+use Entity\Contact;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
-use Form\ContactType;
 
 class ContactController extends AbstractController
 {
