@@ -1,7 +1,6 @@
 {% trans_default_domain 'FOSUserBundle' %}
         <div id="login" class="col-xl-12 col-md-12 col-12 col-sm-12 d-flex align-items-center justify-content-center pb-5 w-100">
                 <div class="card_bis w-75 z-depth-4">
-               
                     <h3 class="card-header blue-gradient white-text text-center py-4"><strong>Inscription</strong></h3>
                     <div class="card-body px-lg-5 pt-0">
                         {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'row fos_user_registration_register text-center'}}) }}
