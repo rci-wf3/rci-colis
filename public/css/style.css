@@ -646,23 +646,6 @@ body,
     margin-bottom: 7rem!important;
 }
 
-.middle {
-    position: static;
-    top: 50%;
-    width: 100%;
-    transform: translateY(-50%);
-}
-
-.counting-sec {
-    background: linear-gradient(40deg, #45cafc, #ff6ec4);
-}
-
-.inner-width {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-}
-
 .col {
     flex: 1;
     text-align: center;
