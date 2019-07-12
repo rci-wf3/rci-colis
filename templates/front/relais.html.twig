@@ -1,0 +1,17 @@
+{% extends 'base_front.html.twig' %}
+
+{% block title %}Nos relais{% endblock %} 
+
+{% block navbar %}
+    {% include "navbar/nav_black.html.twig" %} 
+{% endblock navbar %} 
+{% block body %}
+    <section id="histo" class="container text-center">
+        <h1>Cartes des relais</h1>
+        <p>Ici Vous trouverez toutes les adresses des relais colis indépendant pour recevoir vos achat</p>
+    </section>
+    <div class="d-flex justify-content-center">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1NXiEA7J7cAZDMch26KsHQj3qDy1UHhD1" width="640" height="480">
+        </iframe>
+    </div>
+{% endblock body %}
