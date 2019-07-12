@@ -48,11 +48,11 @@ class FrontController extends AbstractController
     }
 
     /**
-     * @Route("/contact", name="front_contact")
+     * @Route("/FAQ", name="front_FAQ")
      */
-    public function contact()
+    public function FAQ()
     {
-        return $this->render('front/contact.html.twig', [
+        return $this->render('front/FAQ.html.twig', [
             'controller_name' => 'FrontController',
         ]);
     }

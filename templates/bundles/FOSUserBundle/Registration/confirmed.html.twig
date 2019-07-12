@@ -3,8 +3,17 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
 {% block fos_user_content %}
-    <p>{{ 'registration.confirmed'|trans({'%username%': user.username}) }}</p>
-    {% if targetUrl %}
-    <p><a href="{{ targetUrl }}">{{ 'registration.back'|trans }}</a></p>
-    {% endif %}
+<div class="min-vh-100">
+    <h1 class="text-primary mb-5">{{ 'registration.confirmed'|trans({'%username%': user.username}) }}</h1 class="text-primary">
+        <h2 class="my-5">Merci pour votre inscription!<br>
+                        Maintenant que votre compte est actif vous avez accès à différentes fonctionnalités!</h2>
+        <ul>
+            <li>Voir les relais colis</li>
+            <li>Passer une commande</li>
+            <li>Choisir un abonnement</li>
+        </ul>
+
+        <h2 class="my-5">Vous avez aussi d'autres possibilités si vous êtes un professionnel!</h2>
+        
+</div>
 {% endblock fos_user_content %}
