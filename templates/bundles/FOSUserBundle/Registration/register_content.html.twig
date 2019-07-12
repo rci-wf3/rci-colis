@@ -1,72 +1,77 @@
 {% trans_default_domain 'FOSUserBundle' %}
-        <div id="login" class="col-xl-12 col-md-12 col-12 col-sm-12 d-flex align-items-center justify-content-center pb-5 w-100">
-                <div class="card_bis w-75 z-depth-4">
-                    <h3 class="card-header blue-gradient white-text text-center py-4"><strong>Inscription</strong></h3>
-                    <div class="card-body px-lg-5 pt-0">
-                        {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'row fos_user_registration_register text-center'}}) }}
-                                <div class="col-lg-6 col-12">
-                                        <div class="md-form md-bg">
-                                            {{ form_widget(form.username,{'attr': { 'class': 'form-control' }} ) }}
-                                            {{ form_label(form.username, null, { 'label': 'Votre identifiant', 'label_attr': {'class': ''} }) }}
-                                        </div>
-                    
-                                        <div class="md-form md-bg">
-                                            {{ form_widget(form.nom,{'attr': { 'class': 'form-control' }} ) }}
-                                            {{ form_label(form.nom, null, { 'label': 'Votre nom', 'label_attr': {'class': ''} }) }}
-                                        </div>
-                    
-                                        <div class="md-form md-bg">
-                                            {{ form_widget(form.prenom,{'attr': { 'class': 'form-control' }} ) }}
-                                            {{ form_label(form.prenom, null, { 'label': 'Votre prénom', 'label_attr': {'class': ''} }) }}
-                                        </div>
-                    
-                                        <div class="md-form md-bg">
-                                            {{ form_widget(form.adresse,{'attr': { 'class': 'form-control' }} ) }}
-                                            {{ form_label(form.adresse, null, { 'label': 'Votre adresse', 'label_attr': {'class': ''} }) }}
-                                        </div>
-                    
-                                        <div class="md-form md-bg">
-                                            {{ form_widget(form.ville,{'attr': { 'class': 'form-control' }} ) }}
-                                            {{ form_label(form.ville, null, { 'label': 'Votre ville', 'label_attr': {'class': ''} }) }}
-                                        </div>
-                                </div>
-        
-                                <div class="col-lg-6 col-12">
-                                    <div class="md-form md-bg">
-                                            {{ form_widget(form.code_postal,{'attr': { 'class': 'form-control' }} ) }}
-                                            {{ form_label(form.code_postal, null, { 'label': 'Votre code postal', 'label_attr': {'class': ''} }) }}
-                                    </div>
-                                   
-                                    <div class="md-form md-bg">
-                                        {{ form_widget(form.telephone,{'attr': { 'class': 'form-control' }} ) }}
-                                        {{ form_label(form.telephone, null, { 'label': 'Votre numéro de téléphone', 'label_attr': {'class': ''} }) }}
-                                    </div>
-                    
-                                    <div class="md-form md-bg">
-                                        {{ form_widget(form.email,{'attr': { 'class': 'form-control' }} ) }}
-                                        {{ form_label(form.email, null, { 'label': 'Adresse mail', 'label_attr': {'class': ''} }) }}
-                                    </div>
-                    
-                                    <div class="md-form md-bg">
-                                        {{ form_widget(form.plainPassword.first,{'attr': { 'class': 'form-control' }} ) }}
-                                        {{ form_label(form.plainPassword.first, null, {'label_attr': {'class': ''} }) }}
-                                    </div>
-                    
-                                    <div class="md-form md-bg">
-                                        {{ form_widget(form.plainPassword.second,{'attr': { 'class': 'form-control' }} ) }}
-                                        {{ form_label(form.plainPassword.second, null, { 'label': 'Confirmez votre mot de passe', 'label_attr': {'class': ''} }) }}
-                                    </div>
-                                </div>
 
-                                <div class="col-12">
-                                    <input class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit" value="{{ 'registration.submit'|trans }}" />
-                                    <p>Déjà membre?</p>
-                                    <a href="{{ path('fos_user_security_login') }}">Connectez-vous!</a>
-                                </div>
-                        {{ form_end(form) }}
+{% block body%}
+
+    <div id="login" class="col-xl-12 col-md-12 col-12 col-sm-12 d-flex align-items-center justify-content-center pb-5 w-100">
+        <div class="card_bis w-75 z-depth-4">
+        <h3 class="card-header blue-gradient white-text text-center py-4"><strong>Inscription</strong></h3>
+            <div class="card-body px-lg-5 pt-0">
+                {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'row fos_user_registration_register text-center'}}) }}
+                    <div class="col-lg-6 col-12">
+                        <div class="md-form md-bg">
+                            {{ form_widget(form.username,{'attr': { 'class': 'form-control' }} ) }}
+                            {{ form_label(form.username, null, { 'label': 'Votre identifiant', 'label_attr': {'class': ''} }) }}
+                        </div>
+                
+                        <div class="md-form md-bg">
+                            {{ form_widget(form.nom,{'attr': { 'class': 'form-control' }} ) }}
+                            {{ form_label(form.nom, null, { 'label': 'Votre nom', 'label_attr': {'class': ''} }) }}
+                        </div>
+                
+                        <div class="md-form md-bg">
+                            {{ form_widget(form.prenom,{'attr': { 'class': 'form-control' }} ) }}
+                            {{ form_label(form.prenom, null, { 'label': 'Votre prénom', 'label_attr': {'class': ''} }) }}
+                        </div>
+                
+                        <div class="md-form md-bg">
+                            {{ form_widget(form.adresse,{'attr': { 'class': 'form-control' }} ) }}
+                            {{ form_label(form.adresse, null, { 'label': 'Votre adresse', 'label_attr': {'class': ''} }) }}
+                        </div>
+                
+                        <div class="md-form md-bg">
+                            {{ form_widget(form.ville,{'attr': { 'class': 'form-control' }} ) }}
+                            {{ form_label(form.ville, null, { 'label': 'Votre ville', 'label_attr': {'class': ''} }) }}
+                        </div>
                     </div>
-            </div> 
-        </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div class="md-form md-bg">
+                            {{ form_widget(form.code_postal,{'attr': { 'class': 'form-control' }} ) }}
+                            {{ form_label(form.code_postal, null, { 'label': 'Votre code postal', 'label_attr': {'class': ''} }) }}
+                        </div>
+                            
+                        <div class="md-form md-bg">
+                            {{ form_widget(form.telephone,{'attr': { 'class': 'form-control' }} ) }}
+                            {{ form_label(form.telephone, null, { 'label': 'Votre numéro de téléphone', 'label_attr': {'class': ''} }) }}
+                        </div>
+                
+                        <div class="md-form md-bg">
+                            {{ form_widget(form.email,{'attr': { 'class': 'form-control' }} ) }}
+                            {{ form_label(form.email, null, { 'label': 'Adresse mail', 'label_attr': {'class': ''} }) }}
+                        </div>
+                
+                        <div class="md-form md-bg">
+                            {{ form_widget(form.plainPassword.first,{'attr': { 'class': 'form-control' }} ) }}
+                            {{ form_label(form.plainPassword.first, null, {'label_attr': {'class': ''} }) }}
+                        </div>
+                
+                        <div class="md-form md-bg">
+                            {{ form_widget(form.plainPassword.second,{'attr': { 'class': 'form-control' }} ) }}
+                            {{ form_label(form.plainPassword.second, null, { 'label': 'Confirmez votre mot de passe', 'label_attr': {'class': ''} }) }}
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <input class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit" value="{{ 'registration.submit'|trans }}" />
+                        <p>Déjà membre?</p>
+                        <a href="{{ path('fos_user_security_login') }}">Connectez-vous!</a>
+                    </div>
+                {{ form_end(form) }}
+            </div>
+        </div> 
+</div>
+
+{% endblock body %}
 
 
 
