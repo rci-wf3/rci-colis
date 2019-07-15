@@ -62,6 +62,25 @@
                         </div>
                     </div>
 
+                    <div class="row col-lg-12 mt-4">
+                        <div class="col-lg-6 col-md-12">
+                            {{ form_label(form.formule, null, { 'label': 'Choisissez une formule', 'label_attr': {'class': ''} }) }}
+                            {{ form_widget(form.formule,{'attr': { 'class': 'browser-default custom-select' }} ) }}
+                        </div>
+
+                        <div class="col-lg-6 col-md-12">
+                            {{ form_label(form.relais, null, { 'label': 'Choisissez un relais', 'label_attr': {'class': ''} }) }}
+                            {{ form_widget(form.relais,{'attr': { 'class': 'browser-default custom-select' }} ) }}
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="md-form md-bg mt-4">
+                            {{ form_label(form.sondage, null, { 'label': 'Comment avez-vous connu le site ?', 'label_attr': {'class': ''} }) }}
+                            {{ form_widget(form.sondage,{'attr': { 'class': 'md-textarea form-control' }} ) }}
+                        </div>
+                    </div>
+
                     <div class="col-12">
                          <input class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit" value="{{ 'registration.submit'|trans }}" />
                          <p>Déjà membre ?</p>
