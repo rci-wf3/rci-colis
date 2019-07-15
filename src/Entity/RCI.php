@@ -187,4 +187,11 @@ class RCI
 
         return $this;
     }
+
+    public function __toString(){
+        // to show the name of the Client in the select
+        return $this->enseigne . " à " . $this->ville;
+        // to show the id of the CLient in the select
+        // return $this->id;
+    }
 }

@@ -70,6 +70,12 @@
          * @ORM\Column(type="string", length=255)
          * @Assert\NotBlank
          */
+        private $relais;
+
+        /**
+         * @ORM\Column(type="string", length=255)
+         * @Assert\NotBlank
+         */
         private $sondage;
 
         /**
@@ -158,6 +164,18 @@
         public function setFormule(string $formule): self
         {
             $this->formule = $formule;
+            
+            return $this;
+        }
+
+        public function getRelais(): ?string
+        {
+            return $this->relais;
+        }
+
+        public function setRelais(string $relais): self
+        {
+            $this->relais = $relais;
             
             return $this;
         }
