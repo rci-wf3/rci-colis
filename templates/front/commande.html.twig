@@ -7,56 +7,20 @@
 {% endblock navbar %} 
 
 {% block body %}
-    <div id="histo" class="col-xl-12 col-md-12 col-12 col-sm-12 d-flex align-items-center justify-content-center pb-5">
-        <div class="card-body px-lg-5 pt-0">
-            <form action="" class="text-center">
-                <div class="w-100 row">
-                    <div class="col-12">
-                        <h1 class="w-100 card-header blue-gradient white-text text-center py-4">Passer une commande</h1>
-                        <div class="w-100 row rounded-bottom border justifu-content-center m-0 z-depth-3 p-5">
-                            <h1 class="my-3 font-weight-bold indigo-text col-12 text-center">Vos coordonnées</h1>
-                            <div class="col-lg-6 col-12">
-                                <div class="md-form md-bg">
-                                    <input type="text" name="" id="" class="form-control">
-                                    <label for="">Votre nom</label>
-                                </div>
-                            
-                                <div class="md-form md-bg">
-                                    <input type="text" name="" id="" class="form-control">
-                                    <label for="">Votre prénom</label>
-                                </div>
-                            </div>
-                
-                            <div class="col-lg-6 col-12">
-                                <div class="md-form md-bg">
-                                    <input type="text" name="" id="" class="form-control">
-                                    <label for="">Votre adresse</label>
-                                </div>
-                                
-                                <div class="md-form md-bg">
-                                    <input type="text" name="" id="" class="form-control">
-                                    <label for="">Votre adresse mail</label>
-                                </div>
-                            </div>
+    <main id="histo">
+        <section>
+            <article>
+                <h1>Passer une commande via relais colis</h1>
+                <p>Avec nos résaux Franco-Suisse, nous vous proposons une solution simple pour retirer vos colis.</p>
+                <p>Supermarchés, boutiques, nos relais colis sont des commerçant de proximité. Vous êtes assuré de pouvoir retiré vos commandes en toute sécurité tout en préservant vos économies grace à notre solution.</p>
+            </article>
 
-                            <div class="col-lg-12 mb-5 d-flex justify-content-center flex-column align-items-center">
-                                <h1 class="my-3 font-weight-bold indigo-text">Choix du relais de reception de votre commande</h1>
-                                <div class="d-flex justify-content-center w-50">
-                                    <select name="" id="" class="browser-default custom-select">
-                                        {% for RCI in commande %}
-                                            <option value="">{{RCI.enseigne}}: {{RCI.adresse}} {{RCI.ville}}, {{RCI.codepostal}}</option>
-                                        {% endfor %}
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col-12">
-                                <button class="btn-lg btn btn-outline-info btn-rounded waves-effect z-depth-2 my-4 p-2">Commander</button>
-                            </div>
-                        </div>  
-                    </div>      
-                </div>
-            </form>
-        </div>
-    </div>
+            <article>
+                <i class="fas fa-3x fa-shopping-cart"></i>
+                <h3>Passage de votre commande sur une platteforme</h3>
+                <p>Pour recevoir votre commande dans un relai colis ils vous suffit tout simplement de vous inscrire et de choisir le relais et la formules d'abonement de votre choix.</p>
+                <p>une fois cela fait, lors de votre commande sur un site marchand il vous suffit de donner les informations de livraison du relais colis (adresse, ville etc..) avec votre nom, prenom, téléphone.</p>
+            </article>
+        </section>
+    </main>
 {% endblock body %}
