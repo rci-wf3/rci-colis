@@ -59,6 +59,18 @@
          * @Assert\Regex("/[0]{1,1}[0-9]{9,9}/", message="Téléphone invalide")
          */
         private $telephone;
+        
+        /**
+         * @ORM\Column(type="string", length=50)
+         * @Assert\NotBlank
+         */
+        private $formule;
+
+        /**
+         * @ORM\Column(type="string", length=255)
+         * @Assert\NotBlank
+         */
+        private $sondage;
 
         /**
          * @ORM\Column(type="datetime")
@@ -135,6 +147,30 @@
         {
             $this->telephone = $telephone;
     
+            return $this;
+        }
+
+        public function getFormule(): ?string
+        {
+            return $this->formule;
+        }
+
+        public function setFormule(string $formule): self
+        {
+            $this->formule = $formule;
+            
+            return $this;
+        }
+
+        public function getSondage(): ?string
+        {
+            return $this->sondage;
+        }
+
+        public function setSondage(string $sondage): self
+        {
+            $this->sondage = $sondage;
+            
             return $this;
         }
 
