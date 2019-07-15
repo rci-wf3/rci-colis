@@ -81,4 +81,13 @@ class FrontController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("/professionel", name="front_professionel")
+     */
+    public function professionel()
+    {
+        return $this->render('front/professionel.html.twig', [
+            'controller_name' => 'FrontController',
+        ]);
+    }
 }
