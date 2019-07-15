@@ -1,0 +1,71 @@
+{% extends 'base_front.html.twig' %} {% block title %}R.C.I Colis{% endblock %} {% block navbar %} {% include "navbar/nav_black.html.twig" %} {% endblock navbar %} {% block body %}
+
+
+
+
+
+<!-- Default form contact -->
+<section class="col-6  ml-auto mr-auto" id="histo">
+    <form class="text-center border border-light p-5" action="#!">
+        <h3 class="card-header blue-gradient white-text text-center py-4 mb-5"><strong>Devenir Relais Colis RCI</strong></h3>
+        <h4 class="mb-4">Vous êtes un Commerçant ?</h4>
+        <p><strong>Vous souhaitez devenir Relais Colis Indépendant et apporter un nouveau service à vos clients pour développer votre activité : réception colis pour la Suisse ?</strong> </br>
+            </br>
+            Merci de compléter, ce formulaire de candidature. L’animateur relais local vous contactera très prochainement</p>
+
+        <!-- Name -->
+        <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Nom de l'entreprise*" required>
+
+        <!-- Activite -->
+        <input type="text" id="defaultContactFormActivite" class="form-control mb-4" placeholder="Activité*" required>
+
+        <!-- Personne  -->
+        <input type="text" id="defaultContactForPersonne" class="form-control mb-4" placeholder="Personne à contacter*" required>
+
+        <!-- Email -->
+        <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail*" required>
+
+        <!-- Telephone -->
+        <input type="tel" minlength="10" maxlength="10" id="defaultContactFormTelephone" class="form-control mb-4" placeholder="N° de Téléphone*" required>
+
+        <!-- Adresse -->
+        <input type="text" id="defaultContactFormAdresse" class="form-control mb-4" placeholder="N° et Rue*" required>
+
+        <!-- CP -->
+        <input type="number" minlength="5" maxlength="10" id="defaultContactFormCP" class="form-control mb-4" placeholder="Code Postal*" required>
+
+        <!-- Ville -->
+        <input type="text" id="defaultContactFormVille" class="form-control mb-4" placeholder="Ville*" required>
+
+        <!-- Pays -->
+        <input type="text" id="defaultContactFormPays" class="form-control mb-4" placeholder="Pays*" required>
+
+        <!-- Message -->
+        <div class="form-group">
+            <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Demande détaillée de la commande*" required></textarea>
+        </div>
+
+        <!-- Copy -->
+        <div class="custom-control custom-checkbox mb-4">
+            <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+            <label class="custom-control-label" for="defaultContactFormCopy">Envoyez une copie de votre commande</label>
+        </div>
+
+        <!-- Donnee Personnel -->
+        <div class="custom-control custom-checkbox mb-4">
+            <input type="checkbox" class="custom-control-input" id="defaultDonneePersonnel">
+            <label class="custom-control-label" for="defaultDonneePersonnel" required>En cochant cette case et en soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées par RCI Colis pour me recontacter.</br> Aucun autre traitement ne sera effectué avec mes informations</label>
+        </div>
+
+        <!-- Send button -->
+        <button class="btn blue-gradient" type="submit">Envoyez</button>
+
+
+    </form>
+
+    <!-- Default form contact -->
+</section>
+
+
+
+{% endblock body %}
