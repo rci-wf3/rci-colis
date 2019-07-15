@@ -59,7 +59,7 @@
 }
 
 .card:hover {
-    transform: scale(0.9, 0.9);
+    transform: scale(1.08, 1.08);
     box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
 }
 
@@ -690,6 +690,13 @@ h2 {
     font-family: Arial, Verdana;
     font-weight: 800;
     font-size: 2.5rem;
+    color: #014c8c;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: Arial, Verdana;
+    font-weight: 600;
     color: #014c8c;
     text-transform: uppercase;
 }
