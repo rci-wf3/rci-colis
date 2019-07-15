@@ -112,4 +112,24 @@ class FrontController extends AbstractController
             'controller_name' => 'FrontController',
         ]);
     }
+
+    /**
+     * @Route("/formule_unite", name="front_formule_unite")
+     */
+    public function formule_unite()
+    {
+        return $this->render('front/formule_unite.html.twig', [
+            'controller_name' => 'FrontController',
+        ]);
+    }
+
+    /**
+     * @Route("/devenir_rci", name="front_devenir_rci")
+     */
+    public function devenir_rci()
+    {
+        return $this->render('front/devenir_rci.html.twig', [
+            'controller_name' => 'FrontController',
+        ]);
+    }
 }
