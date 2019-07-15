@@ -90,4 +90,14 @@ class FrontController extends AbstractController
             'controller_name' => 'FrontController',
         ]);
     }
+
+    /**
+     * @Route("/commande", name="front_commande")
+     */
+    public function commande()
+    {
+        return $this->render('front/commande.html.twig', [
+            'controller_name' => 'FrontController',
+        ]);
+    }
 }
