@@ -7,17 +7,56 @@
 {% endblock navbar %} 
 
 {% block body %}
-    <h1>Passer une commande Internet via RCI Colis</h1>
-    <p>Après avoir lu et accepté nos conditions d’utilisation, choisi une formule d’abonnement chez RCI Colis, puis adhérer à nos services…</p>
-    <ul>
-        <li>Comment faire livrer mon colis chez un prestataire RCI ?</li>
-    </ul>
-    <p>Tout d’abord, il vous faut choisir, chez quel prestataire vous souhaitez être livré. Sur votre formulaire de commande,
-            par ex si vous choisissez Hyper U :</p>
+    <div id="histo" class="col-xl-12 col-md-12 col-12 col-sm-12 d-flex align-items-center justify-content-center pb-5 w-100">
+        <div class="card-body px-lg-5 pt-0">
+            <h1 class="card-header blue-gradient white-text text-center py-4">Vos coordonnées</h1>
+            <form action="" class="row">
+                <div class="row w-100 rounded-bottom border">
+                    <div class="col-lg-6 col-12">
+                        <div class="md-form md-bg">
+                            <input type="text" name="" id="" class="form-control">
+                            <label for="">Votre nom</label>
+                        </div>
+            
+                        <div class="md-form md-bg">
+                            <input type="text" name="" id="" class="form-control">
+                            <label for="">Votre prénom</label>
+                        </div>
+                    </div>
 
-    <p>Nom : RCI Colis « Maison Passion »</p>
-    <p>Prénom : Votre propre nom et prénom</p>
-    <p>Adresse : 1 rue de Besançon (HyperU)</p>
-    <p>Code postal : 25300 Doubs</p>
-    <p>Coordonnées de contact : Il s’agit du téléphone du Relais choisi, pour que le transporteur puisse le joindre, ex pour Hyper U : 0381467247</p>
+                    <div class="col-lg-6 col-12">
+                        <div class="md-form md-bg">
+                            <input type="text" name="" id="" class="form-control">
+                            <label for="">Votre adresse</label>
+                        </div>
+                
+                        <div class="md-form md-bg">
+                            <input type="text" name="" id="" class="form-control">
+                            <label for="">Votre adresse mail</label>
+                        </div>
+                    </div>
+                            
+                </div>
+                <div class="w-100 row">
+                    <div class="col-lg-6">
+                        <h1 class="card-header blue-gradient white-text text-center py-4">Choix de l'abonnement</h1>
+                        <div>
+            
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-6">
+                        <h1 class="card-header blue-gradient white-text text-center py-4">Choix du relais</h1>
+                        <div class="d-flex justify-content-center p-5 border rounded-bottom">
+                            <select name="" id="" class="browser-default custom-select">
+                                {% for RCI in commande %}
+                                    <option value="">{{RCI.enseigne}}: {{RCI.adresse}} {{RCI.ville}}, {{RCI.codepostal}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 {% endblock body %}
