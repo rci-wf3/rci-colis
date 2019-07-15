@@ -694,9 +694,16 @@ h2 {
     text-transform: uppercase;
 }
 
-h4 {
+h3 {
     font-family: Arial, Verdana;
     font-weight: 600;
+    color: #014c8c;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: Arial, Verdana;
+    font-weight: 400;
     color: #014c8c;
     text-transform: uppercase;
 }

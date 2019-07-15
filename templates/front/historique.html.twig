@@ -1,104 +1,87 @@
-{% extends 'base_front.html.twig' %}
-
-{% block title %}Historique{% endblock %}
-
-{% block navbar %}
-    {% include "navbar/nav_black.html.twig" %}
-{% endblock navbar %}
-
-{% block body %}
+{% extends 'base_front.html.twig' %} {% block title %}Historique{% endblock %} {% block navbar %} {% include "navbar/nav_black.html.twig" %} {% endblock navbar %} {% block body %}
 <!-- Mise en place de la page qui sommes nous -->
-    <main class="container-fluid" id="historique">
-        <header id="haut">
-            <!-- <h2> historique </h2> -->
-            <section class="cd-horizontal-timeline min-vh-100">
-                <h3>L'histoire de RCI Colis</h3>
-                <div class="timeline">
+<main class="container-fluid" id="historique">
+    <header id="haut">
+        <!-- <h2> historique </h2> -->
+        <section class="cd-horizontal-timeline min-vh-100">
+            <h3>L'histoire de RCI Colis</h3>
+            <div class="timeline">
 
-                    <div class="events-wrapper">
-                        <div class="events">
-                            <ol>
-                                <li><a href="#0" data-date="30/04/2017" class="selected">Avril 2017</a></li>
-                                <li><a href="#0" data-date="01/09/2017">Septembre 2017</a></li>
-                                <li><a href="#0" data-date="01/01/2019">Début 2019</a></li>
-                                <li><a href="#0" data-date="01/07/2019">Les mois à venir</a></li>                   
-                            </ol>
+                <div class="events-wrapper">
+                    <div class="events">
+                        <ol>
+                            <li><a href="#0" data-date="30/04/2017" class="selected">Avril 2017</a></li>
+                            <li><a href="#0" data-date="01/09/2017">Septembre 2017</a></li>
+                            <li><a href="#0" data-date="01/01/2019">Début 2019</a></li>
+                            <li><a href="#0" data-date="01/07/2019">Les mois à venir</a></li>
+                        </ol>
 
-                            <span class="filling-line" aria-hidden="true"></span>
-                        </div> <!-- .events -->
-                    </div> <!-- .events-wrapper -->
-                        
-                    <ul class="cd-timeline-navigation">
-                        <li><a href="#0" class="prev inactive">Prev</a></li>
-                        <li><a href="#0" class="next">Next</a></li>
-                    </ul> <!-- .cd-timeline-navigation -->
-                </div> <!-- .timeline -->
+                        <span class="filling-line" aria-hidden="true"></span>
+                    </div>
+                    <!-- .events -->
+                </div>
+                <!-- .events-wrapper -->
 
-                <div class="events-content">
-                    <ol>
-                        
-                        <li class="selected" data-date="30/04/2017">
-                            <h4>Fin avril 2017</h4>
-                            <em>La naissance de RCI Colis</em>
-                            <p> 
-                                Avant de nous lancer dans l'aventure RCI Colis, nous avons ouvert en 2010 une boutique Comète, spécialisée dans la vente de bijoux en acier inoxydable, hypoallergénique et la maroquinerie. C'est fin avril 2017, suite à la demande grandissante de notre clientèle Suisse, nous avons décidez de créer un relais colis indépendant, certains sites Internet ne souhaitant pas livrer sur le territoire Suisse, du fait de formalités administratives trop lourdes et de frais de transport importants.
+                <ul class="cd-timeline-navigation">
+                    <li><a href="#0" class="prev inactive">Prev</a></li>
+                    <li><a href="#0" class="next">Next</a></li>
+                </ul>
+                <!-- .cd-timeline-navigation -->
+            </div>
+            <!-- .timeline -->
 
-                                La différence avec les relais colis traditionnels, c’est que nous ne sommes liés avec aucun transporteur, donc nous acceptons les colis de toutes provenances.
+            <div class="events-content">
+                <ol>
 
-                                Ce nouveau système de relais colis, vous permet entre autre, d’être livré, en votre absence, alors qu’aucun lieu de livraison ne vous est proposé.
-                                Il s’adresse autant à un résident sur le sol français (longues absences…), qu’à un résident suisse.
+                    <li class="selected" data-date="30/04/2017">
+                        <h4>Fin avril 2017</h4>
+                        <em>La naissance de RCI Colis</em>
+                        <p>
+                            Avant de nous lancer dans l'aventure RCI Colis, nous avons ouvert en 2010 une boutique Comète, spécialisée dans la vente de bijoux en acier inoxydable, hypoallergénique et la maroquinerie. C'est fin avril 2017, suite à la demande grandissante de notre
+                            clientèle Suisse, nous avons décidez de créer un relais colis indépendant, certains sites Internet ne souhaitant pas livrer sur le territoire Suisse, du fait de formalités administratives trop lourdes et de frais de transport
+                            importants. La différence avec les relais colis traditionnels, c’est que nous ne sommes liés avec aucun transporteur, donc nous acceptons les colis de toutes provenances. Ce nouveau système de relais colis, vous permet entre
+                            autre, d’être livré, en votre absence, alors qu’aucun lieu de livraison ne vous est proposé. Il s’adresse autant à un résident sur le sol français (longues absences…), qu’à un résident suisse. Nous réceptionnons même les colis
+                            de poids et dimensions hors normes (dans certaines limites), pour cela, il suffit de nous demander un devis. Les délais de stockage relativement longs, jusqu’à 30 jours, vous permettent de partir tranquillement en vacances
+                            ou tout simplement, si vous êtes domiciliés en Suisse, de regrouper plusieurs colis avant de venir les réceptionner et ainsi d’éviter des frais de port exorbitants.
+                        </p>
+                    </li>
 
-                                Nous réceptionnons même les colis de poids et dimensions hors normes (dans certaines limites), pour cela, il suffit de nous demander un devis.
+                    <li data-date="01/09/2017">
+                        <h4>Septembre 2017</h4>
+                        <em>La concrétisation du projet</em>
+                        <p>
+                            Au mois de septembre 2017, nous étions à l’étape du POC (proof of concept), qui permet de démontrer la validité concrète d’un projet. Vous étiez déjà très nombreux à avoir demandé les CGVU de notre RCI Colis.
+                        </p>
+                    </li>
 
-                                Les délais de stockage relativement longs, jusqu’à 30 jours, vous permettent de partir tranquillement en vacances ou tout simplement, si vous êtes domiciliés en Suisse, de regrouper plusieurs colis avant de venir les réceptionner et ainsi d’éviter des frais de port exorbitants.
-                            </p>
-                        </li>
+                    <li data-date="01/01/2019">
+                        <h4>Début 2019</h4>
+                        <em>Expansion</em>
+                        <p>
+                            En ce début d’année 2019, nous venons de franchir une nouvelle étape, Hyper U Pontarlier a signé un partenariat et devient le premier « Relais RCI Colis », dans sa boutique « Maison & Passion » située dans la galerie marchande. Plusieurs autres relais,
+                            proches des frontières sont en négociation, nous vous tiendrons informé régulièrement de nos avancées. Aujourd’hui, nous mettons en ligne un site, qui va vous permettre de nous contacter plus facilement et de vous inscrire
+                            directement. Si vous êtes satisfait de nos services, il sera plus pratique pour vous de diriger vos amis vers notre site, afin qu’il puissent nous rejoindre. Notre but n’est pas de devenir une multinationale, mais bien de continuer
+                            à travailler à l’échelle humaine, pour votre plus grande satisfaction.
+                        </p>
+                    </li>
 
-                        <li data-date="01/09/2017">
-                            <h4>Septembre 2017</h4>
-                            <em>La concrétisation du projet</em>
-                            <p> 
-                                Au mois de septembre 2017, nous étions à l’étape du POC (proof of concept), qui permet de démontrer la validité concrète d’un projet.
-                                Vous étiez déjà très nombreux à avoir demandé les CGVU de notre RCI Colis.
-                            </p>
-                        </li>
+                    <li data-date="01/07/2019">
+                        <h4>Les mois à venir</h4>
+                        <em>Perspectives d'évolution</em>
+                        <p>
+                            Notre prochaine étape, est l’ouverture de plusieurs relais dans d’autres villes frontalières. Les idées de développement ne manquent pas, nous restons à l’écoute de vos besoins et espérons continuer à les satisfaire très longtemps.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+</main>
 
-                        <li data-date="01/01/2019">
-                            <h4>Début 2019</h4>
-                            <em>Expansion</em>
-                            <p> 
-                                En ce début d’année 2019, nous venons de franchir une nouvelle étape, Hyper U Pontarlier a signé un partenariat et devient le premier « Relais RCI Colis », dans sa boutique « Maison & Passion » située dans la galerie marchande.
-                                Plusieurs autres relais, proches des frontières sont en négociation, nous vous tiendrons informé régulièrement de nos avancées.
-                                Aujourd’hui, nous mettons en ligne un site, qui va vous permettre de nous contacter plus facilement et de vous inscrire directement.
+{% endblock %} {% block javascripts %} {% include "includes/javascripts.html.twig" %}
+<script src="{{ asset('js/jquery.timelinr-0.9.7.js') }}"></script>
 
-                                Si vous êtes satisfait de nos services, il sera plus pratique pour vous de diriger vos amis vers notre site, afin qu’il puissent nous rejoindre.
-
-                                Notre but n’est pas de devenir une multinationale, mais bien de continuer à travailler à l’échelle humaine, pour votre plus grande satisfaction.
-                            </p>
-                        </li>
-
-                        <li data-date="01/07/2019">
-                            <h4>Les mois à venir</h4>
-                            <em>Perspectives d'évolution</em>
-                            <p> 
-                               Notre prochaine étape, est l’ouverture de plusieurs relais dans d’autres villes frontalières.
-
-                               Les idées de développement ne manquent pas, nous restons à l’écoute de vos besoins et espérons continuer à les satisfaire très longtemps. 
-                            </p>
-                        </li>   
-                    </ol>
-                </div> 
-           </section>
-    </main>
-   
-{% endblock %}
-
-{% block javascripts %}
-    {% include "includes/javascripts.html.twig" %}
-    <script src="{{ asset('js/jquery.timelinr-0.9.7.js') }}"></script>
-
-    <script type="text/javascript" src="https://cdn.knightlab.com/libs/timeline/latest/js/storyjs-embed.js"></script>
-    <script type="text/javascript" src="https://www.googletagservices.com/activeview/js/current/osd.js?cb=%2Fr20100101"></script>
-    <script type="text/javascript" src="https://ssl.google-analytics.com/ga.js"></script>
-    <script type="text/javascript" src="js/historique.js"></script>
+<script type="text/javascript" src="https://cdn.knightlab.com/libs/timeline/latest/js/storyjs-embed.js"></script>
+<script type="text/javascript" src="https://www.googletagservices.com/activeview/js/current/osd.js?cb=%2Fr20100101"></script>
+<script type="text/javascript" src="https://ssl.google-analytics.com/ga.js"></script>
+<script type="text/javascript" src="js/historique.js"></script>
 {% endblock javascripts %}
