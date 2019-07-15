@@ -8,13 +8,13 @@
 
     {% block body %}
 
-        <div class="col-xl-12 col-md-12 col-12 col-sm-12 d-flex align-items-center justify-content-center pb-5 w-100">
+        <div class="col-12 d-flex align-items-center justify-content-center pb-5 w-100">
             <div class="card_bis w-75 z-depth-4">
                 <h3 class="card-header blue-gradient white-text text-center py-4"><strong>Contact</strong></h3>
-                <div class="card-body px-lg-5 pt-0">
+                <div class="card-body p-5">
                     {{ form_start(form) }}
 
-                    <div class="col-lg-6 col-12"> 
+                    <div class="col-lg-6"> 
 
                         <div class="md-form md-bg">
                             {{ form_widget(form.nom,{'attr': { 'class': 'form-control' }} ) }}
@@ -60,15 +60,15 @@
                             {{ form_label(form.message, null, { 'label': 'Tapez votre message ici', 'label_attr': {'class': ''} }) }}
                         </div> 
 
-                        <div class="md-form md-bg">
+                        <div class="custom-checkbox">
                             {{ form_widget(form.conditions,{'attr': { 'class': 'form-control' }} ) }}
                             {{ form_label(form.conditions, null, { 'label': 'En cochant cette case et en soumettant ce formulaire, j\'accepte que mes données personnelles soient utilisées par RCI Colis pour me recontacter. Aucun autre traitement ne sera effectué avec mes informations', 'label_attr': {'class': ''} }) }}
-                        </div> 
+                        </div>
 
-                          <div>
-                        <button type="submit" class="btn btn-success">Envoyer</button>
-                    </div>
-                    </div>
+                        <div class="col-lg-6">
+                            {{ form_widget(form.envoyer,{'attr': { 'class': 'btn blue-gradient' }} ) }}
+                        </div>
+                   </div>
 
                     {{ form_end(form) }}
                 </div>
