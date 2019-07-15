@@ -96,10 +96,8 @@ class FrontController extends AbstractController
      */
     public function commande()
     {
-        $commande = $this->getDoctrine()->getRepository(RCI::class)->findAll();
         return $this->render('front/commande.html.twig', [
             'controller_name' => 'FrontController',
-            'commande' => $commande,
         ]);
     }
 

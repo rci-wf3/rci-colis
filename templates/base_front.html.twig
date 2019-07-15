@@ -6,6 +6,32 @@
     <title>{% block title %}R.C.I Colis{% endblock %}</title>
     {% block stylesheets %} {% include "includes/stylesheets.html.twig" %} {% endblock %}
     <link rel="stylesheet" href="{{ absolute_url(asset('css/style.css')) }}">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#eaf7f7",
+          "text": "#5c7291"
+        },
+        "button": {
+          "background": "#56cbdb",
+          "text": "#ffffff"
+        }
+      },
+      "theme": "classic",
+      "type": "opt-out",
+      "content": {
+        "message": "Ce site utilise les cookies afin d'avoir une expérience optimale.",
+        "dismiss": "J'accepte",
+        "deny": "Je refuse",
+        "link": "Voir plus",
+        "href": "https://rci-colis.com/cookies/"
+      }
+    })});
+    </script>
 </head>
 
 <body>
