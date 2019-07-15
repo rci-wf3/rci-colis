@@ -71,6 +71,10 @@
     color: black;
 }
 
+.mt-6 {
+    margin-top: 2.5rem !important;
+}
+
 @media all and (max-width: 500px) {
     .card-list {
         /* On small screens, we are no longer using row direction but column */
