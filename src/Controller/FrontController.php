@@ -81,4 +81,35 @@ class FrontController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("/professionel", name="front_professionel")
+     */
+    public function professionel()
+    {
+        return $this->render('front/professionel.html.twig', [
+            'controller_name' => 'FrontController',
+        ]);
+    }
+
+    /**
+     * @Route("/commande", name="front_commande")
+     */
+    public function commande()
+    {
+        $commande = $this->getDoctrine()->getRepository(RCI::class)->findAll();
+        return $this->render('front/commande.html.twig', [
+            'controller_name' => 'FrontController',
+            'commande' => $commande,
+        ]);
+    }
+
+    /**
+     * @Route("/formule_devis", name="front_formule_devis")
+     */
+    public function formule_devis()
+    {
+        return $this->render('front/formule_devis.html.twig', [
+            'controller_name' => 'FrontController',
+        ]);
+    }
 }
