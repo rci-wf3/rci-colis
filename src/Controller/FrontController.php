@@ -100,4 +100,14 @@ class FrontController extends AbstractController
             'controller_name' => 'FrontController',
         ]);
     }
+
+    /**
+     * @Route("/formule_devis", name="front_formule_devis")
+     */
+    public function formule_devis()
+    {
+        return $this->render('front/formule_devis.html.twig', [
+            'controller_name' => 'FrontController',
+        ]);
+    }
 }
