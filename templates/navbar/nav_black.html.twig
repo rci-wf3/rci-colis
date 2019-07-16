@@ -25,10 +25,10 @@
                         <a class="dropdown-item dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Particuliers</a>
                         <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
                             {% if is_granted('IS_AUTHENTICATED_FULLY') %}
-                            <a class="dropdown-item" href="#">Passer une commande</a>
+                            <a class="dropdown-item" href="{{path('front_commande')}}">Passer une commande</a>
                             <a class="dropdown-item" href="{{ path('front_relais')}}">Les points relais RCI</a> {% else %}
                             <a class="dropdown-item" href="{{ path('front_relais')}}">Les points relais RCI</a>
-                            <a class="dropdown-item" href="#">Passer une commande</a>
+                            <a class="dropdown-item" href="{{path('front_commande')}}">Passer une commande</a>
                             <a class="dropdown-item" href="{{ path('fos_user_registration_register') }}">Inscription</a> {% endif %}
                         </div>
                         <a class="dropdown-item" href="{{ path('front_professionel')}}">Professionnels</a>

@@ -1,26 +1,52 @@
-{% extends 'base_front.html.twig' %}
+{% extends 'base_front.html.twig' %} {% block title %}Passer une commande{% endblock %} {% block navbar %} {% include "navbar/nav_black.html.twig" %} {% endblock navbar %} {% block body %}
+<main class="container" id="histo">
+    <h2 class="text-center mb-5">Passer une commande via relais colis</h2>
 
-{% block title %}Passer une commande{% endblock %} 
+    <h4 class="text-center mb-5">Comment faire livrer mon colis chez un prestataire RCI ?</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="images/carton.jpg" alt="photo colis" class="img-fluid">
+        </div>
 
-{% block navbar %}
-    {% include "navbar/nav_black.html.twig" %} 
-{% endblock navbar %} 
+        <article class="col-md-6">
+            <p class="">
+                Tout d’abord, il vous faut choisir, chez quel prestataire vous souhaitez être livré. </br>
+                Sur votre formulaire de commande, par ex si vous choisissez Hyper U :
+            </p>
 
-{% block body %}
-    <main id="histo">
-        <section>
-            <article>
-                <h1>Passer une commande via relais colis</h1>
-                <p>Avec notre réseau Franco-Suisse, nous vous proposons une solution simple pour retirer vos colis.</p>
-                <p>Supermarchés, boutiques, nos relais colis sont des commerçant de proximité. Vous êtes assuré de pouvoir retirer vos commandes en toute sécurité tout en préservant vos économies grace à notre solution.</p>
-            </article>
+            <p class="text-center">
+                <strong>    
+                    Nom : RCI Colis « Maison Passion »</br>
+                    Prénom : Votre propre nom et prénom</br>
+                    Adresse : 1 rue de Besançon (HyperU)</br>
+                    Code postal : 25300 Doubs</br>
+                </strong>
+            </p>
 
-            <article>
-                <i class="fas fa-3x fa-shopping-cart"></i>
-                <h3>Passage de votre commande sur une platteforme</h3>
-                <p>Pour recevoir votre commande dans un relai colis ils vous suffit tout simplement de vous inscrire et de choisir le relais et la formules d'abonement de votre choix.</p>
-                <p>une fois cela fait, lors de votre commande sur un site marchand il vous suffit de donner les informations de livraison du relais colis (nadresse, ville etc..) avec votre nom, prenom, téléphone. (voir exemple ci dessous)</p>
-            </article>
-        </section>
-    </main>
+            <p> Coordonnées de contact : Il s’agit du téléphone du Relais choisi, pour que le transporteur puisse le joindre, ex pour Hyper U : 0381467247
+            </p>
+        </article>
+
+        <div class="bloc col text-center mt-5">
+            <i class="fas fa-shopping-cart fa-3x mb-4 text-primary"></i>
+            <h5 class="mb-5">Passage de votre commande sur une plateforme</h5>
+            <p>Pour recevoir votre commande dans un relai colis ils vous suffit tout simplement de vous inscrire et de choisir le relais et la formules d'abonement de votre choix.</p>
+            <p>une fois cela fait, lors de votre commande sur un site marchand il vous suffit de donner les informations de livraison du relais colis (adresse, ville etc..) avec votre nom, prenom, téléphone. (voir exemple ci dessous)</p>
+        </div>
+    </div>
+
+    <section class="mt-5">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla laborum quo quam ut beatae ea nesciunt perspiciatis! Sed explicabo soluta nostrum fuga consequatur nulla, eum reiciendis. Tempore exercitationem aperiam iure? Natus quia veniam corrupti
+            qui unde, ex, voluptatum neque excepturi illum ratione dolore nostrum! Maxime ea laborum alias excepturi consequuntur?</p>
+        <p>Reiciendis dolor assumenda nihil vel. Ipsum suscipit aut reprehenderit atque voluptatem facere modi quae nobis cupiditate dolorum officia distinctio eos eum quia error, cum voluptatibus! Quis ullam natus doloribus. Culpa nesciunt maiores cum animi
+            esse nulla aut, soluta adipisci totam provident officiis nisi repellat iure, itaque ea similique. Deleniti, ullam?</p>
+        <p>Ipsam commodi dicta perspiciatis molestiae harum maiores blanditiis expedita placeat impedit tenetur distinctio est, debitis cumque voluptates earum quae non saepe temporibus ipsa reprehenderit sint facilis! In, modi at beatae magnam voluptatibus
+            cum libero porro laborum atque. Dolore voluptate veritatis, repellendus ipsum explicabo ut beatae nihil maxime quibusdam, quo aut?</p>
+        <p>Aliquid illum asperiores nam perspiciatis! Quisquam temporibus obcaecati nemo? Porro tempore esse quos, alias iure, nisi expedita voluptate deleniti quas repellat laborum doloribus laudantium vitae vero unde at distinctio explicabo eum fuga eligendi,
+            neque aspernatur veritatis ipsa! Explicabo, magnam! Quidem nihil sint tempore in architecto veniam soluta facilis odit est.</p>
+    </section>
+
+</main>
+
+
 {% endblock body %}
