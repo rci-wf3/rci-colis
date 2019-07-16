@@ -657,7 +657,6 @@ body,
     flex: 1;
     text-align: center;
     padding: 20px;
-    color: #fff;
     text-transform: uppercase;
 }
 
@@ -741,4 +740,16 @@ h4 {
 .table-info>td,
 .table-info>th {
     background-color: #44c0f6;
+}
+
+
+/* -----------------COMMANDE------------------- */
+
+.bloc {
+    width: 100%;
+    background: #eef0f3;
+    padding: 20px 0;
+    display: block;
+    margin: 0 0 15px;
+    border: solid 1px #d5dee5;
 }
