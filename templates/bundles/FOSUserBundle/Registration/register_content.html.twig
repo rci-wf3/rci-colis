@@ -74,11 +74,9 @@
                         </div>
                     </div>
 
-                    <div class="col-12">
-                        <div class="md-form md-bg mt-4">
-                            {{ form_label(form.sondage, null, { 'label': 'Comment avez-vous connu le site ?', 'label_attr': {'class': ''} }) }}
-                            {{ form_widget(form.sondage,{'attr': { 'class': 'md-textarea form-control' }} ) }}
-                        </div>
+                    <div class="col-lg-6 col-md-12 mx-auto mt-2">
+                        {{ form_label(form.sondage, null, { 'label': 'Comment avez-vous connu le site ?', 'label_attr': {'class': ''} }) }}
+                        {{ form_widget(form.sondage,{'attr': { 'class': 'browser-default custom-select' }} ) }}
                     </div>
 
                     <div class="col-12">
