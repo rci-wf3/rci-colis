@@ -1,14 +1,22 @@
-{% extends 'base_front.html.twig' %} {% block title %}R.C.I Colis{% endblock %} {% block navbar %} {% include "navbar/nav_transparent.html.twig" %} {% endblock navbar %} {% block body %}
+{% extends 'base_front.html.twig' %}
+
+{% block title %}R.C.I Colis{% endblock %}
+
+{% block navbar %}
+    {% include "navbar/nav_transparent.html.twig" %}
+{% endblock navbar %}
+
+{% block body %}
 
 <div class="view" style="background-image: url('images/delivery.jpg'); background-repeat: no-repeat; background-size: cover;">
     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
         <div class="text-center white-text mx-5 wow fadeIn">
             <h1 class="mb-4">
                 <strong>R.C.I Colis </br>
-                    Relais Colis Indépendant Franco-Suisse</strong>
+                Relais Colis Indépendant Franco-Suisse</strong>
             </h1>
-            <a href="#particulier"><button type="button" class="btn btn-outline-special-color waves-effect text-white">Particulier</button></a>
-            <a href="#professionel"><button type="button" class="btn btn-outline-special-color waves-effect text-white">Professionnel</button></a>
+            <a href="#particulier"><button type="button" class="btn btn-outline-special-color waves-effect text-white">Particuliers</button></a>
+            <a href="#professionel"><button type="button" class="btn btn-outline-special-color waves-effect text-white">Professionnels</button></a>
         </div>
     </div>
 </div>
@@ -30,8 +38,8 @@
                             <div class="card-body">
 
                                 <h5 class="card-title text-uppercase font-weight-bold white-text mt-2 mb-3"><strong>S'inscrire</strong><i class="fas fa-user ml-3"></i></h5>
-                                <p class="card-text-center white-text mt-5">Rejoignez-nous vite !</p>
-                                <p class="card-text-center white-text mt-6">Cliquez</p>
+                                <p class="card-text-center white-text mb-0">Créez un compte dès à présent et rejoignez-nous vite !</p>
+                                <p class="card-text-center white-text mt-6">Cliquez ici</p>
                             </div>
                         </div>
                     </a>
@@ -45,9 +53,9 @@
                     <a href="{{ path('front_tarifs')}}" class="custom-card">
                         <div class="card purple-gradient text-center z-depth-2" style="width: 15rem; display: inline-block">
                             <div class="card-body">
-                                <h5 class="card-title text-uppercase font-weight-bold white-text mt-2 mb-3"><strong class=" text-uppercase">Abonnement</strong><i class="fas fa-heart ml-3"></i></h5>
-                                <p class="card-text-center white-text mb-0">Nous vous proposons plusieurs services d'abonnement</p>
-                                <p class="card-text-center white-text mt-4">Cliquez ici pour les découvrir</p>
+                                <h5 class="card-title text-uppercase font-weight-bold white-text mt-2 mb-3"><strong class=" text-uppercase">Abonnements</strong><i class="fas fa-heart ml-3"></i></h5>
+                                <p class="card-text-center white-text mb-0">Découvrez nos différentes formules d'abonnements adaptées à vos besoins</p>
+                                <p class="card-text-center white-text mt-6">Cliquez ici</p>
                             </div>
                         </div>
                     </a>
@@ -61,9 +69,9 @@
                     <a href="{{ path('front_relais') }}" class="custom-card">
                         <div class="card blue-gradient text-center z-depth-2" style="width: 15rem; display: inline-block">
                             <div class="card-body">
-                                <h5 class="card-title text-uppercase font-weight-bold white-text mt-2 mb-3"><strong class="text-uppercase">Trouver relais</strong><i class="fas fa-map ml-3"></i></h5>
+                                <h5 class="card-title text-uppercase font-weight-bold white-text mt-2 mb-3"><strong class="text-uppercase">Trouver un RCI</strong><i class="fas fa-map ml-3"></i></h5>
                                 <p class="card-text-center white-text mb-0">N'attendez plus, trouvez le relais colis le plus près de chez vous.</p>
-                                <p class="card-text-center white-text mt-4">Cliquez ici pour voir la carte</p>
+                                <p class="card-text-center white-text mt-6">Cliquez ici pour voir la carte</p>
                             </div>
                         </div>
                     </a>
@@ -78,8 +86,8 @@
                         <div class="card purple-gradient text-center z-depth-2" style="width: 15rem; display: inline-block">
                             <div class="card-body">
                                 <h5 class="card-title text-uppercase font-weight-bold white-text mt-2 mb-3"><strong class="text-uppercase">Se faire livrer</strong><i class="fas fa-cube ml-3"></i></h5>
-                                <p class="card-text-center white-text mb-0">Vous voulez passer une commande et vous faire livrer dans un relais colis ?</p>
-                                <p class="card-text-center white-text mt-4">Cliquez ici</p>
+                                <p class="card-text-center white-text mb-0">Vous souhaitez passer une commande et vous faire livrer dans un relais colis ?</p>
+                                <p class="card-text-center white-text mt-6">Cliquez ici</p>
                             </div>
                         </div>
                     </a>
@@ -93,18 +101,18 @@
         <hr class="my-5">
 
         <section id="professionel" class="wow fadeIn animated">
-            <h2 class="my-5 h3 text-center text-uppercase">Service aux professionnels</h2>
+            <h2 class="my-5 h3 text-center text-uppercase">Services aux professionnels</h2>
             <p class="text-center">
-                <B>Vous êtes un professionel et vous souhaitez profiter de nos offres de livraison de colis ?</p>
+                <B>Vous êtes une entreprise, un profesionnel et vous souhaitez profiter de nos offres de livraison de colis ?</p>
             <p class="text-center">N'attendez plus pour bénéficier de nos tarifs adaptés à vos besoins, contactez-nous !</B>
             </p>
-            <p class="text-center"><a href="{{ path('front_professionel')}}"><button type="button" class="btn btn blue-gradient">Envoyer une demande</button></a></p>
+            <p class="text-center"><a href="{{ path('front_professionel')}}"><button type="button" class="btn btn blue-gradient" style="margin-top: 2.375rem;">Envoyer une demande</button></a></p>
         </section>
 
         <hr class="my-5">
 
         <section id="a-propos" class="wow fadeIn animated">
-            <h2 class="my-5 h3 text-center text-uppercase">A propos de nous</h2>
+            <h2 class="my-5 h3 text-center text-uppercase">À propos de nous</h2>
             <div class="row">
                 <div class="col-3 text-center">
                     <i class="fas fa-user-friends fa-3x"></i>
@@ -142,9 +150,8 @@
                     <div class="col-10">
                         <h4 class="feature-title">Le mot de la fondatrice</h4>
                         <p class="grey-text">
-                            <div class="10">Notre société est une start-up en plein développement, qui répond à une demande bien identifiée. Celle des résidents Suisses ayant à effectuer des commandes en ligne, entre particuliers ou auprès d'un fournisseur, et ne pouvant
-                                être livrés en Suisse dans des délais ou conditions qui leur conviennent.</br>
-                                Nous restons une entreprise à l'échelle humaine et nous œuvrons essentiellement à la satisfaction de vos besoins.
+                            <div class="10">Notre société est une start-up en plein développement, qui répond à une demande bien identifiée. Celle des résidents Suisses ayant à effectuer des commandes en ligne, entre particuliers ou auprès d'un fournisseur, et ne pouvant être livrés en Suisse dans des délais ou conditions qui leur conviennent.</br>
+                            Nous restons une entreprise à l'échelle humaine et nous œuvrons essentiellement à la satisfaction de vos besoins.
                             </div>
                             <B>Patricia G.</B>
                         </p>

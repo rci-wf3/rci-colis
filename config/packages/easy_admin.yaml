@@ -43,6 +43,8 @@ easy_admin:
             [{ property: 'enseigne', label: "Enseigne" }, 
             { property: 'activite', label: 'Activité' },
             { property: 'contact', label: 'Contact' },
+            { property: 'horaires', label: 'Horaires' },
+            { property: 'paiements', label: 'Méthodes de paiement' },
             { property: 'email', label: 'Adresse email' },
             { property: 'adresse', label: 'Adresse' },
             { property: 'codePostal', label: 'Code postal' },

@@ -66,6 +66,7 @@ class RCI
      * @Assert\NotBlank
      */
     private $pays;
+    
 
     /**
      * @ORM\Column(type="string", length=10)
@@ -75,11 +76,24 @@ class RCI
      */
     private $telephone;
 
+    /**
+     * @ORM\Column(type="text")
+     * @Assert\NotBlank
+     */
+    private $paiements;
+
+    /**
+     * @ORM\Column(type="text")
+     * @Assert\NotBlank
+     */
+    private $horaires;
+
     public function getId(): ?int
     {
         return $this->id;
     }
 
+    // 
     public function getEnseigne(): ?string
     {
         return $this->enseigne;
@@ -92,6 +106,7 @@ class RCI
         return $this;
     }
 
+    // 
     public function getActivite(): ?string
     {
         return $this->activite;
@@ -104,6 +119,7 @@ class RCI
         return $this;
     }
 
+    // 
     public function getContact(): ?string
     {
         return $this->contact;
@@ -116,6 +132,7 @@ class RCI
         return $this;
     }
 
+    // 
     public function getEmail(): ?string
     {
         return $this->email;
@@ -128,6 +145,7 @@ class RCI
         return $this;
     }
 
+    // 
     public function getAdresse(): ?string
     {
         return $this->adresse;
@@ -140,6 +158,7 @@ class RCI
         return $this;
     }
 
+    // 
     public function getCodePostal(): ?int
     {
         return $this->code_postal;
@@ -152,6 +171,7 @@ class RCI
         return $this;
     }
 
+    // 
     public function getVille(): ?string
     {
         return $this->ville;
@@ -164,6 +184,7 @@ class RCI
         return $this;
     }
 
+    // 
     public function getPays(): ?string
     {
         return $this->pays;
@@ -176,6 +197,7 @@ class RCI
         return $this;
     }
 
+    // 
     public function getTelephone(): ?string
     {
         return $this->telephone;
@@ -184,6 +206,32 @@ class RCI
     public function setTelephone(string $telephone): self
     {
         $this->telephone = $telephone;
+
+        return $this;
+    }
+
+    // 
+    public function getPaiements(): ?string
+    {
+        return $this->paiements;
+    }
+
+    public function setPaiements(string $paiements): self
+    {
+        $this->paiements = $paiements;
+
+        return $this;
+    }
+
+    // 
+    public function getHoraires(): ?string
+    {
+        return $this->horaires;
+    }
+
+    public function setHoraires(string $horaires): self
+    {
+        $this->horaires = $horaires;
 
         return $this;
     }
