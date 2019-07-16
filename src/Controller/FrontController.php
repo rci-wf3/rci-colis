@@ -130,4 +130,34 @@ class FrontController extends AbstractController
             'controller_name' => 'FrontController',
         ]);
     }
+
+    /**
+     * @Route("/confidentialite", name="front_confidentialite")
+     */
+    public function confidentialite()
+    {
+        return $this->render('front/confidentialite.html.twig', [
+            'controller_name' => 'FrontController',
+        ]);
+    }
+
+    /**
+     * @Route("/cookies", name="front_cookies")
+     */
+    public function cookies()
+    {
+        return $this->render('front/cookies.html.twig', [
+            'controller_name' => 'FrontController',
+        ]);
+    }
+
+    /**
+     * @Route("/credits", name="front_credits")
+     */
+    public function credits()
+    {
+        return $this->render('front/credits.html.twig', [
+            'controller_name' => 'FrontController',
+        ]);
+    }
 }
