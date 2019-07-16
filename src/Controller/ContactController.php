@@ -37,7 +37,7 @@ class ContactController extends AbstractController
 
                         ]
                     ),
-                    'text/html',
+                    'text/html'
                 );
             
             $mail->msg_send();
