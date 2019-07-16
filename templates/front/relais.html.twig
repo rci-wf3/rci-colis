@@ -5,10 +5,12 @@
 {% block navbar %}
     {% include "navbar/nav_black.html.twig" %} 
 {% endblock navbar %} 
+
 {% block body %}
 <section id="histo" class=" text-center">
         <div id="particulier"><h2 class=" mb-1 font-weight-bold mb-3">Carte des relais</h2></div>
-        <p>Ici vous trouverez toutes les adresses des relais colis indépendants pour recevoir vos achats</p>
+        <p>Vous trouverez ici toutes les adresses de nos relais colis partenaires<br>
+        pour venir collecter vos achats et commandes.</p>
         <div class="d-flex justify-content-center pb-5 mb-5">
                 <iframe src="https://www.google.com/maps/d/embed?mid=1NXiEA7J7cAZDMch26KsHQj3qDy1UHhD1" width="640" height="480">
                 </iframe>
@@ -16,11 +18,11 @@
         <hr class="w-75">
 
         <article class="mt-5 d-flex flex-column justify-content-center align-items-center">
-            <div id="particulier"><h2 class="mb-1 font-weight-bold mt-5">Nos relais </h2></div>
-            <div class="row container-fluid p-3 justify-content-center">
+            <div id="particulier"><h2 class="mb-1 font-weight-bold mt-5">Coordonnées de nos relais </h2></div>
+            <div class="row p-3 justify-content-center w-100 m-0">
                 {% for RCI in relais %}
                     <div class="col-lg-3 col-md-12 z-depth-4 p-0 m-3 pb-2">
-                        <h3 class="card-header blue-gradient border border-0 white-text text-center mb-3"><strong>{{RCI.enseigne}}</strong></h3>
+                        <h4 class="card-header blue-gradient border border-0 white-text text-center mb-3"><strong>{{RCI.enseigne}}</strong></h4>
                         <p class="card-text-center  mb-0">{{RCI.adresse}}</p>
                         <p class="card-text-center  mb-0">{{RCI.codepostal}}  {{RCI.ville}}</p>
                         <p class="card-text-center  mb-0">{{RCI.pays}}</p>
