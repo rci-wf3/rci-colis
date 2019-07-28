@@ -1,12 +1,4 @@
-{% extends 'base_front.html.twig' %}
-
-{% block title %}R.C.I Colis{% endblock %}
-
-{% block navbar %}
-    {% include "navbar/nav_transparent.html.twig" %}
-{% endblock navbar %}
-
-{% block body %}
+{% extends 'base_front.html.twig' %} {% block title %}R.C.I Colis{% endblock %} {% block navbar %} {% include "navbar/nav_transparent.html.twig" %} {% endblock navbar %} {% block body %}
 
 <div class="view" style="background-image: url('images/delivery.jpg'); background-repeat: no-repeat; background-size: cover;">
     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
@@ -30,7 +22,7 @@
             <div class="row">
 
                 <!-- Grid column -->
-                <div class="col-lg-3 col-md-12">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <!--Panel-->
                     <a href="{{ path('fos_user_registration_register') }}" class="custom-card">
                         <div class="card blue-gradient text-center z-depth-2" style="width: 15rem; display: inline-block">
@@ -48,7 +40,7 @@
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <!--Panel-->
                     <a href="{{ path('front_tarifs')}}" class="custom-card">
                         <div class="card purple-gradient text-center z-depth-2" style="width: 15rem; display: inline-block">
@@ -64,7 +56,7 @@
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <!-- Panel -->
                     <a href="{{ path('front_relais') }}" class="custom-card">
                         <div class="card blue-gradient text-center z-depth-2" style="width: 15rem; display: inline-block">
@@ -80,7 +72,7 @@
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <!-- Panel -->
                     <a href="{{path('front_commande')}}" class="custom-card">
                         <div class="card purple-gradient text-center z-depth-2" style="width: 15rem; display: inline-block">
@@ -150,8 +142,9 @@
                     <div class="col-10">
                         <h4 class="feature-title">Le mot de la fondatrice</h4>
                         <p class="grey-text">
-                            <div class="10">Notre société est une start-up en plein développement, qui répond à une demande bien identifiée. Celle des résidents Suisses ayant à effectuer des commandes en ligne, entre particuliers ou auprès d'un fournisseur, et ne pouvant être livrés en Suisse dans des délais ou conditions qui leur conviennent.</br>
-                            Nous restons une entreprise à l'échelle humaine et nous œuvrons essentiellement à la satisfaction de vos besoins.
+                            <div class="10">Notre société est une start-up en plein développement, qui répond à une demande bien identifiée. Celle des résidents Suisses ayant à effectuer des commandes en ligne, entre particuliers ou auprès d'un fournisseur, et ne pouvant
+                                être livrés en Suisse dans des délais ou conditions qui leur conviennent.</br>
+                                Nous restons une entreprise à l'échelle humaine et nous œuvrons essentiellement à la satisfaction de vos besoins.
                             </div>
                             <B>Patricia G.</B>
                         </p>
