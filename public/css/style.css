@@ -1,6 +1,7 @@
 /*------------CSS de la NAVBAR et FOOTER------------------*/
 
-@media (max-width: 767px) {
+
+/* @media (max-width: 767px) {
     .navbar-nav {
         padding-top: .425rem;
         padding-left: 0.75rem;
@@ -22,7 +23,7 @@
         position: relative;
         float: none;
     }
-}
+} */
 
 
 /* .navbar-dark {
