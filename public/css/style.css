@@ -732,6 +732,13 @@ h4 {
     text-transform: uppercase;
 }
 
+h5 {
+    font-family: Arial, Verdana;
+    font-weight: 200;
+    color: #014c8c;
+    text-transform: uppercase;
+}
+
 .accordion-section .panel-default>.panel-heading {
     border: 0;
     background: #f4f4f4;
