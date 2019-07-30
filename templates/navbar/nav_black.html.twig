@@ -5,15 +5,20 @@
             <img class="logo mr-5" src="{{ absolute_url(asset('images/logo.png')) }}">
         </a>
         <!-- Collapse -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler  blue-gradient" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <!-- <i class="fas fa-bars fa-1x"></i> -->
+                </span>
               </button>
         <!-- Links -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- <div class="collapse navbar-toggleable-md" id="navbarSupportedContent"> -->
             <!-- Left -->
             <ul class="navbar-nav mr-auto">
+                <!-- <ul class="navbar-nav pull-lg-right mr-auto"> -->
 
                 <li class="nav-item dropdown">
+                    <!-- <li class="nav-item dropdown hidden-md-up"> -->
                     <a class="nav-link dropdown-toggle text-white" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">QUI SOMMES-NOUS ?</a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="{{path('front_historique')}}">Historique</a>
