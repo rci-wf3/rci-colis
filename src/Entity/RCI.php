@@ -66,7 +66,6 @@ class RCI
      * @Assert\NotBlank
      */
     private $pays;
-    
 
     /**
      * @ORM\Column(type="string", length=10)

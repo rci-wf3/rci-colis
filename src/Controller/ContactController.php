@@ -6,20 +6,17 @@ use App\Form\ContactType;
 use App\Entity\Contact;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\BrowserKit\Request;
-use Symfony\Component\HttpFoundation\Response;
 use Swift_Message;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 class ContactController extends AbstractController
 {
     /**
      * @Route("/contact", name="contact", methods={"GET","POST"})
      */
-    public function contact(Request $request): Response
+    public function contact(Request $request, \Swift_Mailer $mailer): Response
     {
-        if ($request) {
-            # code...
-        }
         $contact = new Contact();
         $form = $this->createForm(ContactType::class, $contact);
         $form->handleRequest($request);
@@ -29,10 +26,10 @@ class ContactController extends AbstractController
 
             $mail = (new Swift_Message("Hello, it's me"))
                 ->setFrom('ne-pas-repondre@rci-colis.com')
-                ->setTo('steelook22@gmail.com')
+                ->setTo('ferrand.antony@gmail.com')
                 ->setBody(
                     $this->renderView(
-                        'template.html.twig',
+                        'email/template.html.twig',
                         [
 
                         ]
@@ -40,9 +37,9 @@ class ContactController extends AbstractController
                     'text/html'
                 );
             
-            $mail->msg_send();
+            $mailer->send($mail);
 
-            return $this->redirectToRoute('vache_index');
+            return $this->redirectToRoute('front_index');
         }
 
         return $this->render('contact/contact.html.twig', [
