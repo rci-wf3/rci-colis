@@ -1,11 +1,12 @@
 {% extends 'base_front.html.twig' %} 
+
 {% block title %}R.C.I Colis{% endblock %}
- {% block navbar %} 
- {% include "navbar/nav_black.html.twig" %} 
- {% endblock navbar %} 
- {% block body %}
 
+{% block navbar %} 
+    {% include "navbar/nav_black.html.twig" %} 
+{% endblock navbar %} 
 
+{% block body %}
 <!-- Default form contact -->
 <section class="col-6  ml-auto mr-auto" id="histo">
     <form class="text-center border border-light p-5" action="#!">
@@ -60,7 +61,4 @@
 
     <!-- Default form contact -->
 </section>
-
-
-
 {% endblock body %}
