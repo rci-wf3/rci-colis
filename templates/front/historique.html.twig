@@ -1,4 +1,12 @@
-{% extends 'base_front.html.twig' %} {% block title %}Historique{% endblock %} {% block navbar %} {% include "navbar/nav_black.html.twig" %} {% endblock navbar %} {% block body %}
+{% extends 'base_front.html.twig' %}
+
+{% block title %}Historique{% endblock %} 
+
+{% block navbar %}
+    {% include "navbar/nav_black.html.twig" %} 
+{% endblock navbar %} 
+
+{% block body %}
 <!-- Mise en place de la page qui sommes nous -->
 <main class="container-fluid" id="historique">
     <header id="haut">
@@ -77,11 +85,14 @@
         </section>
 </main>
 
-{% endblock %} {% block javascripts %} {% include "includes/javascripts.html.twig" %}
-<script src="{{ asset('js/jquery.timelinr-0.9.7.js') }}"></script>
+{% endblock %} 
 
-<script type="text/javascript" src="https://cdn.knightlab.com/libs/timeline/latest/js/storyjs-embed.js"></script>
-<script type="text/javascript" src="https://www.googletagservices.com/activeview/js/current/osd.js?cb=%2Fr20100101"></script>
-<script type="text/javascript" src="https://ssl.google-analytics.com/ga.js"></script>
-<script type="text/javascript" src="js/historique.js"></script>
+{% block javascripts %} 
+    {% include "includes/javascripts.html.twig" %}
+    <script src="{{ asset('js/jquery.timelinr-0.9.7.js') }}"></script>
+
+    <script type="text/javascript" src="https://cdn.knightlab.com/libs/timeline/latest/js/storyjs-embed.js"></script>
+    <script type="text/javascript" src="https://www.googletagservices.com/activeview/js/current/osd.js?cb=%2Fr20100101"></script>
+    <script type="text/javascript" src="https://ssl.google-analytics.com/ga.js"></script>
+    <script type="text/javascript" src="js/historique.js"></script>
 {% endblock javascripts %}

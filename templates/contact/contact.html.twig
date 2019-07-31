@@ -2,54 +2,54 @@
 
 {% block title %}Formulaire de contact{% endblock %}
 
-    {% block navbar %}
-        {% include "navbar/nav_black.html.twig" %}
-    {% endblock navbar %}
+{% block navbar %}
+    {% include "navbar/nav_black.html.twig" %}
+{% endblock navbar %}
 
-    {% block body %}
+{% block body %}
 
-        <div id="histo" class="col-6  ml-auto mr-auto">
-            <div class="text-center border border-light p-5">
-                <h3 class="card-header blue-gradient white-text text-center py-4 mb-4"><strong>Contact</strong></h3>
-                <div class="card-body px-lg-5 pt-0">
+    <div id="histo" class="col-6  ml-auto mr-auto">
+        <div class="text-center border border-light p-5">
+            <h3 class="card-header blue-gradient white-text text-center py-4 mb-4"><strong>Contact</strong></h3>
+            <div class="card-body px-lg-5 pt-0">
 
-                    {{ form_start(form) }}
+                {{ form_start(form) }}
 
-                    <div class="md-form md-bg">
-                        {{ form_widget(form.nom,{'attr': { 'class': 'form-control mb-4' }} ) }} {{ form_label(form.nom, null, { 'label': 'Votre nom', 'label_attr': {'class': ''} }) }}
-                    </div>
+                <div class="md-form md-bg">
+                    {{ form_widget(form.nom,{'attr': { 'class': 'form-control mb-4' }} ) }} {{ form_label(form.nom, null, { 'label': 'Votre nom', 'label_attr': {'class': ''} }) }}
+                </div>
 
-                    <div class="md-form md-bg">
-                        {{ form_widget(form.prenom,{'attr': { 'class': 'form-control mb-4' }} ) }} {{ form_label(form.prenom, null, { 'label': 'Votre prénom', 'label_attr': {'class': ''} }) }}
-                    </div>
+                <div class="md-form md-bg">
+                    {{ form_widget(form.prenom,{'attr': { 'class': 'form-control mb-4' }} ) }} {{ form_label(form.prenom, null, { 'label': 'Votre prénom', 'label_attr': {'class': ''} }) }}
+                </div>
 
-                    <div class="md-form md-bg">
-                        {{ form_widget(form.adresse,{'attr': { 'class': 'form-control mb-4' }} ) }} {{ form_label(form.adresse, null, { 'label': 'Votre adresse', 'label_attr': {'class': ''} }) }}
-                    </div>
+                <div class="md-form md-bg">
+                    {{ form_widget(form.adresse,{'attr': { 'class': 'form-control mb-4' }} ) }} {{ form_label(form.adresse, null, { 'label': 'Votre adresse', 'label_attr': {'class': ''} }) }}
+                </div>
 
-                    <div class="md-form md-bg">
-                        {{ form_widget(form.code_postal,{'attr': { 'class': 'form-control mb-4' }} ) }} {{ form_label(form.code_postal, null, { 'label': 'Votre code postal', 'label_attr': {'class': ''} }) }}
-                    </div>
+                <div class="md-form md-bg">
+                    {{ form_widget(form.code_postal,{'attr': { 'class': 'form-control mb-4' }} ) }} {{ form_label(form.code_postal, null, { 'label': 'Votre code postal', 'label_attr': {'class': ''} }) }}
+                </div>
 
-                    <div class="md-form md-bg">
-                        {{ form_widget(form.ville,{'attr': { 'class': 'form-control mb-4' }} ) }} {{ form_label(form.ville, null, { 'label': 'Votre ville', 'label_attr': {'class': ''} }) }}
-                    </div>
+                <div class="md-form md-bg">
+                    {{ form_widget(form.ville,{'attr': { 'class': 'form-control mb-4' }} ) }} {{ form_label(form.ville, null, { 'label': 'Votre ville', 'label_attr': {'class': ''} }) }}
+                </div>
 
-                    <div class="md-form md-bg">
-                        {{ form_widget(form.pays,{'attr': { 'class': 'form-control mb-4' }} ) }}
-                    </div>
+                <div class="md-form md-bg">
+                    {{ form_widget(form.pays,{'attr': { 'class': 'form-control mb-4' }} ) }}
+                </div>
 
-                    <div class="md-form md-bg">
-                        {{ form_widget(form.email,{'attr': { 'class': 'form-control mb-4' }} ) }} {{ form_label(form.email, null, { 'label': 'Votre email', 'label_attr': {'class': ''} }) }}
-                    </div>
+                <div class="md-form md-bg">
+                    {{ form_widget(form.email,{'attr': { 'class': 'form-control mb-4' }} ) }} {{ form_label(form.email, null, { 'label': 'Votre email', 'label_attr': {'class': ''} }) }}
+                </div>
 
-                    <div class="md-form md-bg">
-                        {{ form_widget(form.telephone,{'attr': { 'class': 'form-control mb-4' }} ) }} {{ form_label(form.telephone, null, { 'label': 'Votre numéro de téléphone', 'label_attr': {'class': ''} }) }}
-                    </div>
+                <div class="md-form md-bg">
+                    {{ form_widget(form.telephone,{'attr': { 'class': 'form-control mb-4' }} ) }} {{ form_label(form.telephone, null, { 'label': 'Votre numéro de téléphone', 'label_attr': {'class': ''} }) }}
+                </div>
 
-                    <div class="md-form md-bg">
-                        {{ form_widget(form.message,{'attr': { 'class': 'form-control mb-4' }} ) }} {{ form_label(form.message, null, { 'label': 'Tapez votre message ici', 'label_attr': {'class': ''} }) }}
-                    </div>
+                <div class="md-form md-bg">
+                    {{ form_widget(form.message,{'attr': { 'class': 'form-control mb-4' }} ) }} {{ form_label(form.message, null, { 'label': 'Tapez votre message ici', 'label_attr': {'class': ''} }) }}
+                </div>
 
 <<<<<<< Updated upstream
                     <div class="custom-control custom-checkbox mb-4">
@@ -66,9 +66,14 @@
                     </div>
                 </div>
 
-                {{ form_end(form) }}
+                <div class="col-lg-12">
+                    {{ form_widget(form.envoyer,{'attr': { 'class': 'btn blue-gradient' }} ) }}
+                </div>
             </div>
+
+            {{ form_end(form) }}
         </div>
     </div>
+</div>
 
 {% endblock body %}

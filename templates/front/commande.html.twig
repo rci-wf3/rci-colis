@@ -2,47 +2,47 @@
 
 {% block title %}Passer une commande{% endblock %}
 
-    {% block navbar %}
-        {% include "navbar/nav_black.html.twig" %}
-    {% endblock navbar %}
+{% block navbar %}
+    {% include "navbar/nav_black.html.twig" %}
+{% endblock navbar %}
 
-    {% block body %}
-        <main class="container" id="histo">
-            <h2 class="text-center mb-5">Passer une commande via relais colis</h2>
+{% block body %}
+    <main class="container" id="histo">
+        <h2 class="text-center mb-5">Passer une commande via relais colis</h2>
 
-            <h4 class="text-center mb-5">Comment faire livrer mon colis chez un prestataire RCI ?</h4>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="images/carton.jpg" alt="photo colis" class="img-fluid">
-                </div>
-
-                <article class="col-md-6">
-                    <p class="">
-                        Première étape, <a href="{{path('fos_user_registration_register')}}">s'inscrire</a> sur notre site puis <a href="{{path('fos_user_security_login')}}">se connecter</a> à votre compte.<p>
-                    <p>Ensuite, à vous de choisir chez quel prestataire vous souhaitez être livré en sélectionnant un relais colis sur <a href="{{path('front_relais')}}">notre carte</a>.</p>
-                    <p>Inscrivez alors cette adresse dans le formulaire de votre commande, lorsque vous devrez renseigner votre "adresse de livraison".</br>
-                    Par exemple, si vous choisissez l'enseigne Hyper U :
-                    </p>
-
-                    <p class="text-center">
-                        <strong>    
-                            Nom : RCI Colis « Maison Passion »</br>
-                            Prénom : votre propre nom et prénom</br>
-                            Adresse : 1 rue de Besançon (Hyper U)</br>
-                            Code postal : 25 300 Doubs</br>
-                        </strong>
-                    </p>
-                    <p> Coordonnées de contact : inscrire le numéro de téléphone du relais choisi, pour que le transporteur puisse le joindre en cas de besoin.
-                    </p>
-                </article>
-
-                <div class="bloc col text-center mt-5">
-                    <i class="fas fa-shopping-cart fa-3x mb-4 text-primary"></i>
-                    <h5 class="mb-5">Passage de votre commande sur une plateforme</h5>
-                    <p>Pour recevoir votre commande dans un de nos relais colis indépendants, il vous suffit tout simplement de vous inscrire et de choisir le relais et la formule d'abonnement de votre choix.</p>
-                    <p>Une fois cela fait, lors de votre commande sur un site marchand, il vous suffit de donner les informations de livraison du relais colis (adresse, ville, etc..) avec votre nom, prénom, téléphone (voir exemple ci dessous).</p>
-                </div>
+        <h4 class="text-center mb-5">Comment faire livrer mon colis chez un prestataire RCI ?</h4>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="images/carton.jpg" alt="photo colis" class="img-fluid">
             </div>
-        </main>
 
-    {% endblock body %}
+            <article class="col-md-6">
+                <p class="">
+                    Première étape, <a href="{{path('fos_user_registration_register')}}">s'inscrire</a> sur notre site puis <a href="{{path('fos_user_security_login')}}">se connecter</a> à votre compte.<p>
+                <p>Ensuite, à vous de choisir chez quel prestataire vous souhaitez être livré en sélectionnant un relais colis sur <a href="{{path('front_relais')}}">notre carte</a>.</p>
+                <p>Inscrivez alors cette adresse dans le formulaire de votre commande, lorsque vous devrez renseigner votre "adresse de livraison".</br>
+                Par exemple, si vous choisissez l'enseigne Hyper U :
+                </p>
+
+                <p class="text-center">
+                    <strong>    
+                        Nom : RCI Colis « Maison Passion »</br>
+                        Prénom : votre propre nom et prénom</br>
+                        Adresse : 1 rue de Besançon (Hyper U)</br>
+                        Code postal : 25 300 Doubs</br>
+                    </strong>
+                </p>
+                <p> Coordonnées de contact : inscrire le numéro de téléphone du relais choisi, pour que le transporteur puisse le joindre en cas de besoin.
+                </p>
+            </article>
+
+            <div class="bloc col text-center mt-5">
+                <i class="fas fa-shopping-cart fa-3x mb-4 text-primary"></i>
+                <h5 class="mb-5">Passage de votre commande sur une plateforme</h5>
+                <p>Pour recevoir votre commande dans un de nos relais colis indépendants, il vous suffit tout simplement de vous inscrire et de choisir le relais et la formule d'abonnement de votre choix.</p>
+                <p>Une fois cela fait, lors de votre commande sur un site marchand, il vous suffit de donner les informations de livraison du relais colis (adresse, ville, etc..) avec votre nom, prénom, téléphone (voir exemple ci dessous).</p>
+            </div>
+        </div>
+    </main>
+
+{% endblock body %}
