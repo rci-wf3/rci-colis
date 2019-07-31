@@ -51,9 +51,14 @@
                     {{ form_widget(form.message,{'attr': { 'class': 'form-control mb-4' }} ) }} {{ form_label(form.message, null, { 'label': 'Tapez votre message ici', 'label_attr': {'class': ''} }) }}
                 </div>
 
-                <div class="custom-checkbox">
-                    {{ form_widget(form.conditions,{'attr': { 'class': 'form-control mb-4' }} ) }} {{ form_label(form.conditions, null, { 'label': 'En cochant cette case et en soumettant ce formulaire, j\'accepte que mes données personnelles soient utilisées par RCI Colis
-                    pour me recontacter. Aucun autre traitement ne sera effectué avec mes informations', 'label_attr': {'class': ''} }) }}
+                    <div class="custom-control custom-checkbox mb-4">
+                        {{ form_widget(form.conditions,{'attr': { 'class': 'custom-control-input' }} ) }} {{ form_label(form.conditions, null, { 'label': 'En cochant cette case et en soumettant ce formulaire, j\'accepte que mes données personnelles soient utilisées par RCI Colis
+                        pour me recontacter. Aucun autre traitement ne sera effectué avec mes informations', 'label_attr': {'class': 'custom-control-label'} }) }}
+                    </div>
+
+                    <div class="col-lg-12">
+                        {{ form_widget(form.envoyer,{'attr': { 'class': 'btn blue-gradient' }} ) }}
+                    </div>
                 </div>
 
                 <div class="col-lg-12">
