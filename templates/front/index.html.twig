@@ -1,6 +1,11 @@
-{% extends 'base_front.html.twig' %} {% block title %}R.C.I Colis{% endblock %} {% block navbar %} {% include "navbar/nav_transparent.html.twig" %} {% endblock navbar %} {% block body %}
+{% extends 'base_front.html.twig' %} 
+{% block title %}R.C.I Colis{% endblock %}
+ {% block navbar %} 
+ {% include "navbar/nav_transparent.html.twig" %} 
+ {% endblock navbar %} 
+ {% block body %}
 
-<div class="view" style="background-image: url('images/delivery.jpg'); background-repeat: no-repeat; background-size: cover;">
+<div class="img-fluid view" style="background-image: url('images/delivery.jpg'); background-repeat: no-repeat; background-size: cover;">
     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
         <div class="text-center white-text mx-5 wow fadeIn">
             <h1 class="mb-4">
@@ -158,14 +163,15 @@
 
                 <div class="col-lg-6 col-md-12">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe width="300" height="150" src="https://www.youtube.com/embed/a0FYqmPEm4E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="300" height="150" src="https://www.youtube.com/embed/a0FYqmPEm4E" allowfullscreen></iframe>
+                        
                     </div>
                 </div>
+                
             </div>
         </section>
 
     </div>
-
 
 </main>
 

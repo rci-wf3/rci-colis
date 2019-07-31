@@ -39,6 +39,12 @@
     background-image: linear-gradient(to left, #324aa7, #44c0f6);
 }
 
+.navbar-toggler {
+    padding: .15rem .55rem !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+}
+
 
 /*------------ FIN CSS de la NAVBAR et FOOTER------------------*/
 
@@ -631,9 +637,12 @@ img {
 /* Required height of parents of the Full Page Intro and Intro itself */
 
 html,
-body,
-.view {
+body {
     height: 100%;
+}
+
+.view {
+    height: 100vh;
 }
 
 
@@ -642,15 +651,6 @@ body,
 .navbar-dark {
     background-color: transparent!important;
 }
-
-
-/* .navbar {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.top-nav-collapse {
-  background-color: #1C2331;
-} */
 
 
 /* Adding color to the Navbar on mobile */

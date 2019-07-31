@@ -1,13 +1,22 @@
-{% extends 'base_front.html.twig' %} {% block title %}R.C.I Colis{% endblock %} {% block navbar %} {% include "navbar/nav_black.html.twig" %} {% endblock navbar %} {% block body %}
+{% extends 'base_front.html.twig' %} 
+{% block title %}
+    R.C.I Colis
+{% endblock %} 
+{% block navbar %} 
+{% include "navbar/nav_black.html.twig" %} 
+{% endblock navbar %}
+ {% block body %}
 
 <!-- Default form contact -->
 <section class="col-6  ml-auto mr-auto" id="histo">
     <form class="text-center border border-light p-5" action="#!">
         <h3 class="card-header blue-gradient white-text text-center py-4 mb-5"><strong>Devenir un relais colis RCI</strong></h3>
         <h4 class="mb-4">Vous êtes commerçant ?</h4>
-        <p><strong>Vous souhaitez devenir un relais colis indépendant et apporter un nouveau service à vos clients pour développer votre activité ? Nous vous proposons la réception de colis pour la Suisse.</strong></br>
+        <p><strong>Vous souhaitez devenir un relais colis indépendant et apporter un nouveau service à vos clients pour développer votre activité ? </br>
+                    Nous vous proposons la réception de colis pour la Suisse.</strong></br>
             </br>
-            Merci de compléter ce formulaire de candidature. L’animateur relais local vous contactera très prochainement.</p>
+            Merci de compléter ce formulaire de candidature. </br>
+            L’animateur relais local vous contactera très prochainement.</p>
 
         <!-- Name -->
         <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Nom de l'entreprise*" required>
@@ -28,7 +37,7 @@
         <input type="text" id="defaultContactFormAdresse" class="form-control mb-4" placeholder="N° et nom de rue*" required>
 
         <!-- CP -->
-        <input type="number" minlength="5" maxlength="10" id="defaultContactFormCP" class="form-control mb-4" placeholder="Code postal*" required>
+        <input type="tel" minlength="5" maxlength="5" id="defaultContactFormCP" class="form-control mb-4" placeholder="Code postal*" required>
 
         <!-- Ville -->
         <input type="text" id="defaultContactFormVille" class="form-control mb-4" placeholder="Ville*" required>

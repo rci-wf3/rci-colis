@@ -1,5 +1,12 @@
-{% extends 'base_front.html.twig' %} {% block title %}R.C.I Colis{% endblock %} {% block navbar %} {% include "navbar/nav_black.html.twig" %} {% endblock navbar %} {% block body %}
+{% extends 'base_front.html.twig' %}
 
+{% block title %}Nos tarifs{% endblock %}
+
+    {% block navbar %}
+        {% include "navbar/nav_black.html.twig" %}
+    {% endblock navbar %}
+
+    {% block body %}
 
 <!-- Default form contact -->
 <section class="col-6  ml-auto mr-auto" id="histo">
@@ -20,7 +27,7 @@
         <input type="text" id="defaultContactFormAdresse" class="form-control mb-4" placeholder="N° et nom de rue*" required>
 
         <!-- CP -->
-        <input type="number" minlength="5" maxlength="10" id="defaultContactFormCP" class="form-control mb-4" placeholder="Code postal*" required>
+        <input type="tel" minlength="5" maxlength="5" id="defaultContactFormCP" class="form-control mb-4" placeholder="Code postal*" required>
 
         <!-- Ville -->
         <input type="text" id="defaultContactFormVille" class="form-control mb-4" placeholder="Ville*" required>

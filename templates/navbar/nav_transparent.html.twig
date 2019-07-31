@@ -6,9 +6,9 @@
         </a>
         <!-- Collapse -->
         <button class="navbar-toggler blue-gradient" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <!-- <span class="navbar-toggler-icon white-text">
+          <span class="navbar-toggler-icon white-text">
                 <i class="fas fa-bars fa-1x"></i>
-            </span> -->
+            </span> 
             </button>
         <!-- Links -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -54,7 +54,7 @@
                 </li>
                 {% else %}
                 <li class="nav-item">
-                    <a href="{{ path('fos_user_registration_register') }}" class="nav-link btn btn-outline-white rounded-pill active px-4">Inscription</a>
+                    <a href="{{ path('fos_user_registration_register') }}" class="nav-link btn btn-outline-white rounded-pill active px-4" style="width:130px;">Inscription</a>
                 </li>
                 <li>
                     <a href="{{ path('fos_user_security_login') }}" class="nav-link btn btn-outline-white rounded-pill active px-4">Connexion</a>

@@ -1,4 +1,4 @@
-<nav class="navbar fixed-top navbar-expand-lg navbar blue-gradient  fixed-top scrolling-navbar">
+<nav class="navbar fixed-top navbar-expand-lg navbar blue-gradient fixed-top scrolling-navbar">
     <div class="container">
         <!-- Brand -->
         <a class="navbar-brand" href="{{path('front_index')}}">
@@ -7,18 +7,14 @@
         <!-- Collapse -->
         <button class="navbar-toggler  blue-gradient" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
-                    <!-- <i class="fas fa-bars fa-1x"></i> -->
+                    <i class="fas fa-bars fa-1x"></i> 
                 </span>
               </button>
         <!-- Links -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- <div class="collapse navbar-toggleable-md" id="navbarSupportedContent"> -->
             <!-- Left -->
             <ul class="navbar-nav mr-auto">
-                <!-- <ul class="navbar-nav pull-lg-right mr-auto"> -->
-
                 <li class="nav-item dropdown">
-                    <!-- <li class="nav-item dropdown hidden-md-up"> -->
                     <a class="nav-link dropdown-toggle text-white" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">QUI SOMMES-NOUS ?</a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="{{path('front_historique')}}">Historique</a>
@@ -57,7 +53,7 @@
                 </li>
                 {% else %}
                 <li>
-                    <a href="{{ path('fos_user_registration_register') }}" class="nav-link btn btn-outline-white rounded-pill active px-4">Inscription</a>
+                    <a href="{{ path('fos_user_registration_register') }}" class="nav-link btn btn-outline-white rounded-pill active px-4" style="width:130px;">Inscription</a>
                 </li>
                 <li>
                     <a href="{{ path('fos_user_security_login') }}" class="nav-link btn btn-outline-white rounded-pill active px-4">Connexion</a>
